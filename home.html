@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <div class="header_nav">
+      <div class="header-nav">
         <div>
           <a href="./home.html">
             <img
@@ -25,8 +25,8 @@
             <div class="header-navbar__dropdawn">
               <button class="header-navbar__dropdawn-button">Портфоліо</button>
               <div class="header-navbar__dropdawn-content">
-                <a class="header-link" href="#">Зds max</a>
-                <a class="header-link" href="#">photoshop</a>
+                <a class="header-link__dropdawn" href="#">Зds max</a>
+                <a class="header-link__dropdawn" href="#">photoshop</a>
               </div>
             </div>
             <a class="header-link" href="#services">Послуги</a>
@@ -41,51 +41,59 @@
       </div>
     </header>
     <main>
-      <section>
-        <h1 class="hero-title">Естетика, що відчувається з першого погляду</h1>
-        <h2 class="hero-title-h2">
+      <section class="hero-section">
+        <h1 class="hero-section__title">
+          Естетика, що відчувається з першого погляду
+        </h1>
+        <h2 class="hero-section__title__h2">
           Архітектурна та інтер'єрна візуалізація, дизайн-проекти, графічний
           дизайн і меблі власного виробництва - комплексні рішення від ідеї до
           реалізації.
         </h2>
       </section>
-      <section id="advantages">
+      <section class="advantages-section" id="advantages">
         <h2>Про компанію, переваги</h2>
-        <h3>Про компанію</h3>
-        <p>
-          <span lang="en">Ardeon</span> — це студія дизайну, 3D-візуалізації та
-          графіки, яка створює цілісні візуальні та просторові рішення. Ми
-          працюємо на перетині естетики, архітектурного мислення та сучасних
-          технологій, перетворюючи ідеї на чітко продумані й візуально
-          переконливі результати.
-        </p>
-        <p>
-          Ми працюємо з інтер’єрами, архітектурною візуалізацією, графічним
-          дизайном та постобробкою зображень, створюючи єдиний стиль і
-          впізнавану візуальну мову проєкту.
-        </p>
-        <p>
-          Наша мета — створювати інтер’єри та візуальні образи, які не просто
-          виглядають ефектно, а працюють на людину, бізнес і середовище,
-          залишаючи сильне емоційне враження та відчуття завершеності.
-        </p>
-        <h3>Наші переваги</h3>
-        <ul>
-          <li>Понад 10 років досвіду у сфері дизайну</li>
-          <li>Фотореалістична 3D візуалізація</li>
-          <li>Природні матеріали та авторський стиль</li>
-          <li>Повний супровід проекту</li>
-          <li>Власне виробництво меблів</li>
-          <li>Орієнтація на естетику та функціональність</li>
-        </ul>
+        <div class="advantages-section__text frame">
+          <h3>Про компанію</h3>
+          <p>
+            <span lang="en">Ardeon</span> — це студія дизайну, 3D-візуалізації
+            та графіки, яка створює цілісні візуальні та просторові рішення. Ми
+            працюємо на перетині естетики, архітектурного мислення та сучасних
+            технологій, перетворюючи ідеї на чітко продумані й візуально
+            переконливі результати.
+          </p>
+          <p>
+            Ми працюємо з інтер’єрами, архітектурною візуалізацією, графічним
+            дизайном та постобробкою зображень, створюючи єдиний стиль і
+            впізнавану візуальну мову проєкту.
+          </p>
+          <p>
+            Наша мета — створювати інтер’єри та візуальні образи, які не просто
+            виглядають ефектно, а працюють на людину, бізнес і середовище,
+            залишаючи сильне емоційне враження та відчуття завершеності.
+          </p>
+        </div>
+        <div class="advantages-section__text">
+          <h3>Наші переваги</h3>
+          <ul>
+            <li>Понад 10 років досвіду у сфері дизайну</li>
+            <li>Фотореалістична ЗD візуалізація</li>
+            <li>Природні матеріали та авторський стиль</li>
+            <li>Повний супровід проекту</li>
+            <li>Власне виробництво меблів</li>
+            <li>Орієнтація на естетику та функціональність</li>
+          </ul>
+        </div>
       </section>
-      <section id="services">
-        <h2>Наші послуги</h2>
+      <section class="services-section" id="services">
         <div>
+          <h2 class="services-section__title">Наші послуги</h2>
+        </div>
+        <div class="services-section__deer">
           <video width="724" height="434" muted loop>
             <source src="./media/deer.mp4" />
           </video>
-          <div>
+          <div class="services-section__deer__text">
             <h3>Графічний дизайн</h3>
             <h4>Візуальна ідентичність і комунікація</h4>
             <p>
@@ -149,8 +157,8 @@
           </div>
         </div>
       </section>
-      <section id="reviews">
-        <h2>Відгуки клієнтів</h2>
+      <section class="reviews-section" id="reviews">
+        <h2 class="reviews-section__title">Відгуки клієнтів</h2>
         <ul>
           <li>
             <article>
@@ -173,8 +181,8 @@
         </ul>
       </section>
     </main>
+    <!-- Футер -->
     <footer id="contact">
-      <!-- Футер -->
       <nav>
         <a href="./home.html">
           <img
@@ -193,7 +201,7 @@
       </nav>
 
       <address>
-        <p>Ми у соцмережах</p>
+        <p class="adress__title">Ми у соцмережах</p>
         <ul>
           <li><a href="#">Інстаграм</a></li>
           <li><a href="#">Інстаграм</a></li>
@@ -202,14 +210,16 @@
           <li><a href="#">Інстаграм</a></li>
           <li><a href="#">Інстаграм</a></li>
         </ul>
-        <p>Графік роботи <span lang="en">call</span> центру</p>
-        <p>Пн-Пт з 09:00 до 18:00</p>
-        <p>Контакти</p>
-        <ul>
+        <p class="adress__text">
+          Графік роботи <span lang="en">call</span> центру
+        </p>
+        <p class="adress__text">Пн-Пт з 09:00 до 18:00</p>
+        <p class="adress__title">Контакти</p>
+        <ul class="adress__text">
           <li>
             Головний офіс:
             <a
-              class="footer-link"
+              class="footer-link address"
               href="https://maps.app.goo.gl/KCCgdAUvEHUvaUDcA"
               target="_blank"
               >м. Львів вул. Василя Стуса, 24</a
@@ -218,7 +228,7 @@
           <li>
             Адреса виробника:
             <a
-              class="footer-link"
+              class="footer-link address"
               href="https://maps.app.goo.gl/ZcQYCDqzXnjXc6MT6"
               target="_blank"
               >м. Львів вул. Зелена 269</a
@@ -226,13 +236,13 @@
           </li>
           <li>
             Онлайн консультація:
-            <a class="footer-link" href="tel:+380970000000"
+            <a class="footer-link address" href="tel:+380970000000"
               >+ 38 (097) 000 00 00</a
             >
           </li>
           <li>
             Електронна пошта:
-            <a class="footer-link" href="mailto:Ardeon-design@email.com"
+            <a class="footer-link address" href="mailto:Ardeon-design@email.com"
               >Ardeon-design@email.com</a
             >
           </li>

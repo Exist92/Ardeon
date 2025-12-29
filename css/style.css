@@ -1,3 +1,60 @@
+/* Fonts */
+
+/* cormorant*/
+@font-face {
+    font-display: swap;
+    font-family: 'Cormorant';
+    font-weight: 400;
+    src: url('../fonts/cormorant-v24-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Cormorant';
+    font-weight: 500;
+    src: url('../fonts/cormorant-v24-cyrillic_latin-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Cormorant';
+    font-weight: 700;
+    src: url('../fonts/cormorant-v24-cyrillic_latin-700.woff2') format('woff2');
+}
+
+/* cormorant-infant*/
+@font-face {
+    font-display: swap;
+    font-family: 'Cormorant Infant';
+    font-weight: 500;
+    src: url('../fonts/cormorant-infant-v22-cyrillic_latin-500.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-display: swap;
+    font-family: 'Cormorant Infant';
+    font-weight: 600;
+    src: url('../fonts/cormorant-infant-v22-cyrillic_latin-600.woff2') format('woff2');
+}
+
+/* science-gothic */
+@font-face {
+    font-display: swap;
+    font-family: 'Science Gothic';
+    font-weight: 400;
+    src: url('../fonts/science-gothic-v5-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+
+/* Great Vibes */
+@font-face {
+    font-display: swap;
+    font-family: 'Great Vibes';
+    font-weight: 400;
+    src: url('../fonts/great-vibes-v21-cyrillic_latin-regular.woff2') format('woff2');
+}
+
 :root {
     --color-base-white: #ffffff;
     --color-primary-light: #ededed;
@@ -11,6 +68,10 @@
 /* Button  */
 
 .button-order {
+    font-family: 'Cormorant';
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
     color: var(--color-primary-light);
     text-transform: uppercase;
     width: 164px;
@@ -39,7 +100,7 @@
 
 /* Dropdawn Navbar */
 
-.header_nav {
+.header-nav {
     display: flex;
 }
 
@@ -61,6 +122,10 @@
 
 
 .header-navbar__dropdawn-button {
+    padding: 0;
+    font-family: 'Cormorant';
+    font-size: 24px;
+    font-weight: 500;
     color: var(--color-primary-light);
     text-transform: uppercase;
     background-color: transparent;
@@ -77,6 +142,8 @@
 }
 
 .header-navbar__dropdawn-content {
+    font-size: 20px;
+    font-weight: 500;
     display: none;
     position: absolute;
     background-color: rgba(237, 237, 237, 0.1);
@@ -91,28 +158,39 @@
 
 .header-navbar__dropdawn-content a {
     text-align: center;
-    padding: 15px 15px;
+    padding: 15px 0px;
     display: block;
 }
 
 /* Logotype */
 .logo-header {
     color: white;
-    box-shadow:
-    0 0 9px 1px rgba(255, 255, 255, 1),/* смещение, размытие, spread (толщина), цвет прозрачность */
-    inset 0 0 9px 1px rgba(255, 255, 255, 1);/* inner glow */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.15) 30%, rgba(255, 255, 255, 0) 62%, rgba(255, 255, 255, 0) 100%);
+    /* box-shadow:
+    0 0 9px 1px rgba(255, 255, 255, 1),
+    inset 0 0 9px 1px rgba(255, 255, 255, 1); */
 }
 
 /* Base */
 
 body {
-    background-image: url(../images/body-background.jpg);
+    font-family: 'Cormorant';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+    background-image:
+    url(../images/body-background.jpg);
     background-size: 1440px 1440px; 
     background-position: center;
     background-repeat: repeat;
     z-index: -99;
-    /* background-attachment: fixed; */
     color: var(--color-primary-light);
+    /* font-family: ; */
+    /* font-size: ; */
+}
+
+address {
+    font-style: normal;
 }
 
 ul {
@@ -127,6 +205,9 @@ a {
 
 .header-link {
     /* color:var(--color-primary-brown); */
+    font-family: 'Cormorant';
+    font-size: 24px;
+    font-weight: 500;
     color: var(--color-primary-light);
     text-transform: uppercase;
 }
@@ -135,7 +216,24 @@ a {
     color:var(--color-primary-brown);
 }
 
+.header-link__dropdawn {
+    color: var(--color-primary-light);
+    text-transform: uppercase;
+    font-family: 'Cormorant';
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.header-link__dropdawn:hover {
+    text-shadow: 0 0 15px var(--color-emissive);
+    color: var(--color-primary-brown)
+}
+
 .footer-link {
+    font-family: 'Cormorant Infant';
+    font-size: 30px;
+    font-weight: 500;
     color: var(--color-primary-brown);
 }
 
@@ -143,13 +241,135 @@ a {
     color: var(--color-primary-light);
 }
 
+.footer-link.address {
+    font-size: 18px;
+    font-weight: 500;
+}
+
 /* Hero section */
 
-.hero-title {
+.hero-section__title {
+    font-size: 36px;
+    font-weight: 700;
     color: var(--color-primary-light);
 }
 
-.hero-title-h2 {
+.hero-section__title__h2 {
+    font-size: 24px;
+    font-weight: 400;
     color: var(--color-primary-brown);
+}
+
+/* Advantages section */
+
+.advantages-section span,h3 {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.advantages-section__text {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.advantages-section .frame {
+    width: 650px;
+    height: 558px;
+    border: 2px solid var(--color-primary-light);
+    padding: 34px 40px 34px 34px;
+    box-shadow: 
+    0 0 6px 1px var(--color-emissive),/* смещение, размытие, spread (толщина), цвет прозрачность */
+    inset 0 0 6px 1px var(--color-emissive);/* inner glow */;
+}
+
+/* Services section */
+
+.services-section h3,h4 {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: none;
+}
+
+.services-section p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.services-section__title {
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Cormorant Infant';
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.services-section__deer {
+    position: relative;
+    width: 724px;
+    height: 434px;
+    overflow: hidden;
+}
+
+.services-section__deer video {
+    width: 724px;
+    height: 434px;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.services-section__deer .services-section__deer__text {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.services-section__deer:hover .services-section__deer__text {
+    opacity: 0;
+}
+
+/* Reviews section */
+
+.reviews-section__title {
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Cormorant Infant';
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.reviews-section h3 {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Cormorant Infant';
+    text-transform: none;
+}
+
+.reviews-section p {
+    color: var(--color-primary-brown);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* Footer */
+
+.adress__title {
+    color: var(--color-primary-brown);
+    font-family: 'Cormorant Infant';
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.adress__text {
+    color: var(--color-primary-brown);
+    font-size: 18px;
+    font-weight: 500;
 }
 

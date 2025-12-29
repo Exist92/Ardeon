@@ -4,38 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ardeon - Home</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="./home.html">
-          <img
-            width="113"
-            height="136"
-            src="./images/logo-small.svg"
-            alt="Логотип компанії"
-          />
-        </a>
-        <ul>
-          <li>Портфоліо</li>
-          <li><a href="#services">Послуги</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#reviews">Відгуки</a></li>
-          <li><a href="#contact">Контакти</a></li>
-        </ul>
-      </nav>
-      <button type="button">Замовити</button>
+      <div class="header_nav">
+        <div>
+          <a href="./home.html">
+            <img
+              class="logo-header"
+              width="113"
+              height="136"
+              src="./images/logo-small.svg"
+              alt="Логотип компанії"
+            />
+          </a>
+        </div>
+        <nav>
+          <div class="header-navbar">
+            <div class="header-navbar__dropdawn">
+              <button class="header-navbar__dropdawn-button">Портфоліо</button>
+              <div class="header-navbar__dropdawn-content">
+                <a class="header-link" href="#">Зds max</a>
+                <a class="header-link" href="#">photoshop</a>
+              </div>
+            </div>
+            <a class="header-link" href="#services">Послуги</a>
+            <a class="header-link" href="#">Каталог</a>
+            <a class="header-link" href="#reviews">Відгуки</a>
+            <a class="header-link" href="#contact">Контакти</a>
+          </div>
+        </nav>
+        <div>
+          <button class="button-order" type="button">Замовити</button>
+        </div>
+      </div>
     </header>
     <main>
-      <section id="advantages">
-        <h1>Естетика, що відчувається з першого погляду</h1>
-        <h2>
+      <section>
+        <h1 class="hero-title">Естетика, що відчувається з першого погляду</h1>
+        <h2 class="hero-title-h2">
           Архітектурна та інтер'єрна візуалізація, дизайн-проекти, графічний
           дизайн і меблі власного виробництва - комплексні рішення від ідеї до
           реалізації.
         </h2>
       </section>
-      <section>
+      <section id="advantages">
         <h2>Про компанію, переваги</h2>
         <h3>Про компанію</h3>
         <p>
@@ -171,10 +185,10 @@
           />
         </a>
         <ul>
-          <li><a href="#advantages">Про нас</a></li>
-          <li><a href="#services">Послуги</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#reviews">Відгуки</a></li>
+          <li><a class="footer-link" href="#advantages">Про нас</a></li>
+          <li><a class="footer-link" href="#services">Послуги</a></li>
+          <li><a class="footer-link" href="#">Каталог</a></li>
+          <li><a class="footer-link" href="#reviews">Відгуки</a></li>
         </ul>
       </nav>
 
@@ -194,23 +208,33 @@
         <ul>
           <li>
             Головний офіс:
-            <a href="https://maps.app.goo.gl/KCCgdAUvEHUvaUDcA" target="_blank"
+            <a
+              class="footer-link"
+              href="https://maps.app.goo.gl/KCCgdAUvEHUvaUDcA"
+              target="_blank"
               >м. Львів вул. Василя Стуса, 24</a
             >
           </li>
           <li>
             Адреса виробника:
-            <a href="https://maps.app.goo.gl/ZcQYCDqzXnjXc6MT6" target="_blank"
+            <a
+              class="footer-link"
+              href="https://maps.app.goo.gl/ZcQYCDqzXnjXc6MT6"
+              target="_blank"
               >м. Львів вул. Зелена 269</a
             >
           </li>
           <li>
             Онлайн консультація:
-            <a href="tel:+380970000000">+ 38 (097) 000 00 00</a>
+            <a class="footer-link" href="tel:+380970000000"
+              >+ 38 (097) 000 00 00</a
+            >
           </li>
           <li>
             Електронна пошта:
-            <a href="mailto:Ardeon-design@email.com">Ardeon-design@email.com</a>
+            <a class="footer-link" href="mailto:Ardeon-design@email.com"
+              >Ardeon-design@email.com</a
+            >
           </li>
         </ul>
       </address>

@@ -1,0 +1,155 @@
+:root {
+    --color-base-white: #ffffff;
+    --color-primary-light: #ededed;
+    --color-primary-brown: #b0a99d;
+    --color-primary-dark: #1a1a1a;
+    --color-secondary-brown: #736e68;
+    --color-emissive: #f5ca9f;
+
+}
+
+/* Button  */
+
+.button-order {
+    color: var(--color-primary-light);
+    text-transform: uppercase;
+    width: 164px;
+    height: 55px;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    box-shadow:
+    0 0 9px 1px rgba(255, 255, 255, 1),/* смещение, размытие, spread (толщина), цвет прозрачность */ 
+    inset 0 0 9px 1px rgba(255, 255, 255, 1);/* inner glow */;
+    cursor: pointer;
+}
+
+.button-order:hover {
+    box-shadow:
+    0 0 30px 8px rgba(255, 255, 255, 0.5),
+    inset 0 0 30px 8px rgba(255, 255, 255, 0.5);
+}
+
+.button-order:active {
+    background-color: rgba(245, 202, 159, 0.2);
+    box-shadow:
+        0 0 30px 8px rgba(255, 255, 255, 0.5),
+        inset 0 0 30px 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Dropdawn Navbar */
+
+.header_nav {
+    display: flex;
+}
+
+.header-navbar {
+    overflow: hidden;
+    background-color: transparent;
+    /* font-family: ; */
+}
+
+/* .header-navbar a { Если пригодится 
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+} */
+
+
+
+.header-navbar__dropdawn-button {
+    color: var(--color-primary-light);
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+}
+
+.header-navbar__dropdawn-button:hover {
+    color: var(--color-primary-brown)
+}
+
+.header-navbar__dropdawn {
+    float: left;
+    overflow: hidden;
+}
+
+.header-navbar__dropdawn-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(237, 237, 237, 0.1);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.header-navbar__dropdawn:hover .header-navbar__dropdawn-content {
+    display: block;
+}
+
+.header-navbar__dropdawn-content a {
+    text-align: center;
+    padding: 15px 15px;
+    display: block;
+}
+
+/* Logotype */
+.logo-header {
+    color: white;
+    box-shadow:
+    0 0 9px 1px rgba(255, 255, 255, 1),/* смещение, размытие, spread (толщина), цвет прозрачность */
+    inset 0 0 9px 1px rgba(255, 255, 255, 1);/* inner glow */
+}
+
+/* Base */
+
+body {
+    background-image: url(../images/body-background.jpg);
+    background-size: 1440px 1440px; 
+    background-position: center;
+    background-repeat: repeat;
+    z-index: -99;
+    /* background-attachment: fixed; */
+    color: var(--color-primary-light);
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Link */
+
+a {
+    text-decoration: none;
+}
+
+.header-link {
+    /* color:var(--color-primary-brown); */
+    color: var(--color-primary-light);
+    text-transform: uppercase;
+}
+
+.header-link:hover {
+    color:var(--color-primary-brown);
+}
+
+.footer-link {
+    color: var(--color-primary-brown);
+}
+
+.footer-link:hover {
+    color: var(--color-primary-light);
+}
+
+/* Hero section */
+
+.hero-title {
+    color: var(--color-primary-light);
+}
+
+.hero-title-h2 {
+    color: var(--color-primary-brown);
+}
+

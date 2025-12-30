@@ -65,6 +65,36 @@
 
 }
 
+/* Base */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+    background-image:
+        url(../images/body-background.jpg);
+    background-size: 1440px 1440px;
+    background-position: center;
+    background-repeat: repeat;
+    z-index: -99;
+    color: var(--color-primary-light);
+    /* font-family: ; */
+    /* font-size: ; */
+}
+
+address {
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none;
+}
+
 /* Button  */
 
 .button-order {
@@ -171,31 +201,7 @@
     inset 0 0 9px 1px rgba(255, 255, 255, 1); */
 }
 
-/* Base */
 
-body {
-    font-family: 'Cormorant';
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 1.2;
-    background-image:
-    url(../images/body-background.jpg);
-    background-size: 1440px 1440px; 
-    background-position: center;
-    background-repeat: repeat;
-    z-index: -99;
-    color: var(--color-primary-light);
-    /* font-family: ; */
-    /* font-size: ; */
-}
-
-address {
-    font-style: normal;
-}
-
-ul {
-    list-style-type: none;
-}
 
 /* Link */
 
@@ -286,6 +292,7 @@ a {
 /* Services section */
 
 .services-section h3,h4 {
+    margin: 0 0 16px 0;
     font-size: 28px;
     font-weight: 700;
     text-transform: none;
@@ -294,11 +301,13 @@ a {
 .services-section p {
     font-size: 22px;
     font-weight: 400;
+    margin: 0;
 }
 
 .services-section__title {
+    margin: 0 0 25px 0;
     font-size: 28px;
-    font-weight: 400;
+    font-weight: 600;
     font-family: 'Cormorant Infant';
     text-transform: uppercase;
     text-align: center;
@@ -319,14 +328,16 @@ a {
 }
 
 .services-section__deer .services-section__deer__text {
+    flex-direction: column;
     position: absolute;
+    padding: 20px;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     display: flex;
-    align-items: center;
-    justify-content: left;
-    text-align: center;
+    align-items: start;
+    justify-content: end;
+    text-align: left;
     transition: opacity 0.4s ease;
     z-index: 2;
 }
@@ -335,11 +346,157 @@ a {
     opacity: 0;
 }
 
+.services-section__computer {
+    position: relative;
+    width: 450px;
+    height: 434px;
+    overflow: hidden;
+}
+
+.services-section__computer video {
+    width: 450px;
+    height: 434px;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.services-section__computer .services-section__computer__text {
+    flex-direction: column;
+    position: absolute;
+    padding: 20px;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    text-align: left;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.services-section__computer:hover .services-section__computer__text {
+    opacity: 0;
+}
+
+.services-section__top-part {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin: 0 0 6px 0;
+}
+
+.services-section__blueprint {
+    position: relative;
+    width: 450px;
+    height: 434px;
+    overflow: hidden;
+}
+
+.services-section__blueprint video {
+    width: 450px;
+    height: 434px;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.services-section__blueprint .services-section__blueprint__text {
+    flex-direction: column;
+    position: absolute;
+    padding: 20px;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    text-align: left;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.services-section__blueprint:hover .services-section__blueprint__text {
+    opacity: 0;
+}
+
+.services-section__interior {
+    position: relative;
+    width: 724px;
+    height: 434px;
+    overflow: hidden;
+}
+
+.services-section__interior video {
+    width: 724px;
+    height: 434px;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.services-section__interior .services-section__interior__text {
+    flex-direction: column;
+    position: absolute;
+    padding: 20px;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    text-align: left;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.services-section__interior:hover .services-section__interior__text {
+    opacity: 0;
+}
+
+.services-section__woodwork {
+    position: relative;
+    width: 1180px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.services-section__woodwork video {
+    width: 1180px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center bottom;
+    pointer-events: none;
+}
+
+.services-section__woodwork .services-section__woodwork__text {
+    flex-direction: column;
+    position: absolute;
+    padding: 20px;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    text-align: left;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.services-section__woodwork:hover .services-section__woodwork__text {
+    opacity: 0;
+}
+
+.services-section__bottom-part {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 40px 0;
+}
+
 /* Reviews section */
 
 .reviews-section__title {
     font-size: 28px;
-    font-weight: 400;
+    font-weight: 600;
     font-family: 'Cormorant Infant';
     text-transform: uppercase;
     text-align: center;

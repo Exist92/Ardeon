@@ -10,10 +10,9 @@
     <header>
       <div class="container-header">
         <div class="header-block">
-          <div>
+          <div class="logo-header">
             <a href="./home.html">
               <img
-                class="logo-header"
                 width="113"
                 height="136"
                 src="./images/logo-small.svg"
@@ -184,9 +183,14 @@
       <section class="reviews-section" id="reviews">
         <div class="container">
           <h2 class="reviews-section__title">Відгуки клієнтів</h2>
+          <button class="reviews-arrow-button" type="button">
+            <svg class="reviews-arrow-ico" width="56" height="94">
+              <use href="./images/icons.svg#icon-left-arrow"></use>
+            </svg>
+          </button>
           <ul class="reviews-list">
             <li>
-              <article class="reviews-card">
+              <article class="reviews-card Natalia">
                 <h3>Наталаія</h3>
                 <p>Проєкт був реалізований чітко й без зайвих правок</p>
               </article>
@@ -213,7 +217,8 @@
     <footer class="footer-box" id="contact">
       <div class="container">
         <div class="footer-items">
-          <div>
+          <div class="test-box"></div>
+          <div class="logo-footer">
             <a href="./home.html">
               <img
                 width="153"
@@ -236,24 +241,60 @@
 
           <address>
             <div>
-              <p class="adress__title">Ми у соцмережах</p>
-              <ul>
-                <li><a href="#">Інстаграм</a></li>
-                <li><a href="#">Інстаграм</a></li>
-                <li><a href="#">Інстаграм</a></li>
-                <li><a href="#">Інстаграм</a></li>
-                <li><a href="#">Інстаграм</a></li>
-                <li><a href="#">Інстаграм</a></li>
+              <p class="address__title">Ми у соцмережах</p>
+              <ul class="address-icons-box">
+                <li>
+                  <a href="#">
+                    <svg class="address-icon" width="40" height="40">
+                      <use href="./images/icons.svg#icon-youtube-logo"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="address-icon" width="40" height="40">
+                      <use href="./images/icons.svg#icon-facebook-logo"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="address-icon" width="40" height="40">
+                      <use href="./images/icons.svg#icon-instagram-logo"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="address-icon" width="40" height="40">
+                      <use href="./images/icons.svg#icon-telegram-logo"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="address-icon" width="40" height="40">
+                      <use href="./images/icons.svg#icon-twitter-logo"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="address-icon" width="40" height="40">
+                      <use href="./images/icons.svg#icon-viber-logo"></use>
+                    </svg>
+                  </a>
+                </li>
               </ul>
-              <p class="adress__text">
+              <p class="address__text">
                 Графік роботи <span lang="en">call</span> центру
               </p>
-              <p class="adress__text">Пн-Пт з 09:00 до 18:00</p>
+              <p class="address__text">Пн-Пт з 09:00 до 18:00</p>
             </div>
 
             <div>
-              <p class="adress__title">Контакти</p>
-              <ul class="adress__text">
+              <p class="address__title">Контакти</p>
+              <ul class="address__text">
                 <li>
                   Головний офіс:
                   <a

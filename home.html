@@ -21,10 +21,13 @@
             </a>
           </div>
           <div class="header-nav">
+            <div class="header-nav__diamond">
+              <div class="header-nav__diamond__light"></div>
+            </div>
             <nav>
               <div class="header-nav__bar">
                 <div class="header-nav__bar__dropdawn">
-                  <button class="header-nav__bar__dropdawn-button">
+                  <button class="header-nav__bar__dropdawn-button nav-item">
                     Портфоліо
                   </button>
                   <div class="header-nav__bar__dropdawn-content">
@@ -32,15 +35,17 @@
                     <a class="header-link__dropdawn" href="#">photoshop</a>
                   </div>
                 </div>
-                <a class="header-link" href="#services">Послуги</a>
-                <a class="header-link" href="#">Каталог</a>
-                <a class="header-link" href="#reviews">Відгуки</a>
-                <a class="header-link" href="#contact">Контакти</a>
+                <a class="header-link nav-item" href="#services">Послуги</a>
+                <a class="header-link nav-item" href="#">Каталог</a>
+                <a class="header-link nav-item" href="#reviews">Відгуки</a>
+                <a class="header-link nav-item" href="#contact">Контакти</a>
               </div>
             </nav>
           </div>
           <div>
-            <button class="button-order" type="button">Замовити</button>
+            <button class="button-order modal-btn-open" type="button">
+              Замовити
+            </button>
           </div>
         </div>
       </div>
@@ -101,11 +106,11 @@
       </section>
       <section class="services-section" id="services">
         <div class="container">
-          <div>
+          <div class="services-section__decor">
             <h2 class="services-section__title">Наші послуги</h2>
           </div>
           <div class="services-section__top-part">
-            <div class="services-section__deer">
+            <div class="services-section__deer video-block">
               <video muted loop>
                 <source src="./media/deer.mp4" />
               </video>
@@ -119,7 +124,7 @@
                 </p>
               </div>
             </div>
-            <div class="services-section__computer">
+            <div class="services-section__computer video-block">
               <video muted loop>
                 <source src="./media/computer.mp4" />
               </video>
@@ -133,7 +138,7 @@
             </div>
           </div>
           <div class="services-section__top-part">
-            <div class="services-section__blueprint">
+            <div class="services-section__blueprint video-block">
               <video muted loop>
                 <source src="./media/blueprints.mp4" />
               </video>
@@ -147,7 +152,7 @@
                 </p>
               </div>
             </div>
-            <div class="services-section__interior">
+            <div class="services-section__interior video-block">
               <video muted loop>
                 <source src="./media/interior.mp4" />
               </video>
@@ -163,7 +168,7 @@
             </div>
           </div>
           <div class="services-section__bottom-part">
-            <div class="services-section__woodwork">
+            <div class="services-section__woodwork video-block">
               <video muted loop>
                 <source src="./media/woodwork.mp4" />
               </video>
@@ -182,34 +187,64 @@
       </section>
       <section class="reviews-section" id="reviews">
         <div class="container">
-          <h2 class="reviews-section__title">Відгуки клієнтів</h2>
-          <button class="reviews-arrow-button" type="button">
-            <svg class="reviews-arrow-ico" width="56" height="94">
-              <use href="./images/icons.svg#icon-left-arrow"></use>
-            </svg>
-          </button>
-          <ul class="reviews-list">
-            <li>
-              <article class="reviews-card Natalia">
-                <h3>Наталаія</h3>
-                <p>Проєкт був реалізований чітко й без зайвих правок</p>
-              </article>
-            </li>
-            <li>
-              <article class="reviews-card">
-                <h3>Олександр</h3>
-                <p>Професійний підхід і високий рівень графіки</p>
-              </article>
-            </li>
-            <li>
-              <article class="reviews-card">
-                <h3>Ірина</h3>
-                <p>
-                  Сподобалась робота з деталями та загальна атмосфера проєкту
-                </p>
-              </article>
-            </li>
-          </ul>
+          <div class="reviews-section__decor">
+            <h2 class="reviews-section__title">Відгуки клієнтів</h2>
+          </div>
+          <div class="reviews-container">
+            <button class="reviews-arrow-button" type="button">
+              <svg class="reviews-arrow-ico" width="56" height="94">
+                <use href="./images/icons.svg#icon-left-arrow"></use>
+              </svg>
+            </button>
+            <ul class="reviews-list">
+              <li>
+                <article class="reviews-card Natalia">
+                  <h3>Наталаія</h3>
+                  <p>Проєкт був реалізований чітко й без зайвих правок</p>
+                  <div class="reviews-card__stars">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="reviews-card Oleksandr">
+                  <h3>Олександр</h3>
+                  <p>Професійний підхід і високий рівень графіки</p>
+                  <div class="reviews-card__stars">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star white"></div>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="reviews-card Irina">
+                  <h3>Ірина</h3>
+                  <p>
+                    Сподобалась робота з деталями та загальна атмосфера проєкту
+                  </p>
+                  <div class="reviews-card__stars">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="reviews-arrow-button" type="button">
+              <svg class="reviews-arrow-ico" width="56" height="94">
+                <use href="./images/icons.svg#icon-right-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
     </main>
@@ -244,46 +279,60 @@
               <p class="address__title">Ми у соцмережах</p>
               <ul class="address-icons-box">
                 <li>
-                  <a href="#">
-                    <svg class="address-icon" width="40" height="40">
-                      <use href="./images/icons.svg#icon-youtube-logo"></use>
-                    </svg>
-                  </a>
+                  <div class="icon-shadow">
+                    <a href="https://www.youtube.com" target="_blank">
+                      <svg class="address-icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-youtube-logo"></use>
+                      </svg>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#">
-                    <svg class="address-icon" width="40" height="40">
-                      <use href="./images/icons.svg#icon-facebook-logo"></use>
-                    </svg>
-                  </a>
+                  <div class="icon-shadow">
+                    <a href="https://www.facebook.com/" target="_blank">
+                      <svg class="address-icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-facebook-logo"></use>
+                      </svg>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#">
-                    <svg class="address-icon" width="40" height="40">
-                      <use href="./images/icons.svg#icon-instagram-logo"></use>
-                    </svg>
-                  </a>
+                  <div class="icon-shadow">
+                    <a href="https://www.instagram.com/" target="_blank">
+                      <svg class="address-icon" width="40" height="40">
+                        <use
+                          href="./images/icons.svg#icon-instagram-logo"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#">
-                    <svg class="address-icon" width="40" height="40">
-                      <use href="./images/icons.svg#icon-telegram-logo"></use>
-                    </svg>
-                  </a>
+                  <div class="icon-shadow">
+                    <a href="https://web.telegram.org/k/" target="_blank">
+                      <svg class="address-icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-telegram-logo"></use>
+                      </svg>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#">
-                    <svg class="address-icon" width="40" height="40">
-                      <use href="./images/icons.svg#icon-twitter-logo"></use>
-                    </svg>
-                  </a>
+                  <div class="icon-shadow">
+                    <a href="https://x.com/" target="_blank">
+                      <svg class="address-icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-twitter-logo"></use>
+                      </svg>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#">
-                    <svg class="address-icon" width="40" height="40">
-                      <use href="./images/icons.svg#icon-viber-logo"></use>
-                    </svg>
-                  </a>
+                  <div class="icon-shadow">
+                    <a href="https://www.viber.com/ua/" target="_blank">
+                      <svg class="address-icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-viber-logo"></use>
+                      </svg>
+                    </a>
+                  </div>
                 </li>
               </ul>
               <p class="address__text">
@@ -333,5 +382,24 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-button__close modal-btn-close" type="button">
+          x
+        </button>
+        <div class="logo-modal">
+          <img
+            width="126"
+            height="154"
+            src="./images/logo-small.svg"
+            alt="Логотип компанії"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/diamond.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/video.js"></script>
   </body>
 </html>

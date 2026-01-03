@@ -163,10 +163,15 @@ ul {
 }
 
 .header-block {
-    gap: 70px;
+    gap: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    z-index: 3;
+    top: 30px;
+    left: 0;
+    width: 100%;
 }
 
 .header-nav {
@@ -182,6 +187,8 @@ ul {
     height: 1px;
     background-color: var(--color-primary-light);
     top: -13px;
+    box-shadow: 
+    0 0px 12px 1px var(--color-base-white);
 }
 
 
@@ -258,13 +265,15 @@ ul {
 .header-nav__bar__dropdawn-content {
     font-size: 20px;
     font-weight: 500;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     background-color: rgba(237, 237, 237, 0.1);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     left: -10px;
+    transition: visibility 1s, opacity 1s;
 }
 
 .header-nav__bar__dropdawn-content::before {
@@ -278,7 +287,8 @@ ul {
 }
 
 .header-nav__bar__dropdawn:hover .header-nav__bar__dropdawn-content {
-    display: block;
+    opacity: 1;
+    visibility: visible; 
 }
 
 .header-nav__bar__dropdawn-content a {
@@ -326,6 +336,7 @@ a {
     font-weight: 500;
     color: var(--color-primary-light);
     text-transform: uppercase;
+    transition: color 0.3s;
 }
 
 .header-link:hover {
@@ -339,6 +350,7 @@ a {
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
+    transition: color 0.3s, text-shadow 1s;
 }
 
 .header-link__dropdawn:hover {
@@ -351,6 +363,7 @@ a {
     font-size: 30px;
     font-weight: 500;
     color: var(--color-primary-brown);
+    transition: color 0.3s;
 }
 
 .footer-link:hover {
@@ -372,16 +385,47 @@ a {
     linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%,
     rgba(0, 0, 0, 0.3) 14%,
     rgba(255, 255, 255, 0) 28%),
-    url(../images/hero-section-background-light.png), 
+    /* url(../images/hero-section-background-light.png),  */
     url(../images/hero-section-background.jpg);
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: cover;
-    padding: 643px 0px 86px 0px;
+    padding: 643px 0px 15px 0px;
     position: relative;
     margin-bottom: 50px;
     border-bottom: 4px solid var(--color-primary-brown);
     
+}
+
+.hero-light {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../images/hero-section-background-lights.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    pointer-events: none;
+    animation-name: hero-lighting;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes hero-lighting {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .hero-section__title {
@@ -398,6 +442,12 @@ a {
     font-size: 24px;
     font-weight: 400;
     color: var(--color-primary-brown);
+}
+
+.hero-text-overflow {
+    background-color: rgba(1, 1, 1, 0.4);
+    max-width: 560px;
+    padding: 20px;
 }
 
 /* Advantages section */
@@ -423,7 +473,6 @@ a {
 
 .advantages-section__text {
     padding: 34px 0;
-    overflow: hidden;
     font-size: 24px;
     font-weight: 500;
 }
@@ -435,6 +484,24 @@ a {
 .advantages-section__text li {
     margin-bottom: 40px;
 }
+
+.advantages-section_li_decor {
+    position: relative;
+}
+
+.advantages-section_li_decor::before {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    top: 9px;
+    left: -35px;
+    box-shadow: 0 0 20px 2px var(--color-emissive);
+
+}
+
 
 .advantages-section .frame {
     width: 100%;
@@ -744,12 +811,16 @@ a {
 
 .reviews-arrow-ico {
     fill: var(--color-primary-brown);
-    
+    transition: fill 0.3s, transform 0.3s;
 }
 
 .reviews-arrow-ico:hover {
-    fill: var(--color-primary-light);
     cursor: pointer;
+    transform: scale(1.2);
+}
+
+.reviews-arrow-ico:active {
+    fill: var(--color-primary-darkt);
 }
 
 .reviews-card {
@@ -975,13 +1046,18 @@ address {
     bottom: 0;
     background-color: rgba(26, 26, 26, 0.9);
     z-index: 10;
+    padding: 20px;
+    transition: opacity 1s, visibility 1s;
     
 }
 
 .modal {
     position: relative;
-    width: 700px;
-    height: 700px;
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+    max-height: 700px;
+    /* overflow: auto; */
     border: 1px solid var(--color-base-white);
     box-shadow: 
     0 0 50px 1px var(--color-emissive),
@@ -989,21 +1065,110 @@ address {
     inset 0 0 200px 80px rgba(26, 26, 26, 1),
     inset 0 0 0 800px rgb(90, 90, 90);
     display: flex;
+    padding: 10px 100px;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .backdrop.is-hidden {
-    display: none;
-    /* opacity: 0;
-    visibility: hidden;  для анимации
-    point-events: none;*/
+    opacity: 0;
+    visibility: hidden; 
+    pointer-events: none;
+}
+
+.modal-title {
+    color: var(--color-primary-brown);
+    text-align: center;
+    font-size: 34px;
+    font-weight: 400;
 }
 
 .modal-button__close {
     position: absolute;
-    width: 25px;
-    height: 25px;
+    background-color: transparent;
+    border: none;
+    width: 34px;
+    height: 34px;
     right: 26px;
     top: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
+
+.modal-button__close:hover {
+    border: 1px solid var(--color-base-white);
+    box-shadow: 
+    0 0 3px 1px var(--color-emissive),
+    inset 0 0 3px 1px var(--color-emissive);
+}
+
+.modal-button__close:active {
+    box-shadow: inset 0 0 15px 1px rgba(255, 255, 255, 0.8);
+}
+
+.modal-icon {
+    fill: var(--color-primary-light);
+}
+
+/* Form */
+
+.order-form {
+    width: 100%;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 10px 10px 45px;
+    border: 1px solid rgba(49, 49, 49, 0.66);
+    background-color: rgba(49, 49, 49, 0.66);
+    transition: border 1s, box-shadow 1s;
+    font-family: 'Cormorant Infant';
+    font-size: 22px;
+    color: var(--color-emissive);
+}
+
+.form-input:focus {
+    border: 1px solid var(--color-base-white);
+    outline: none;
+    box-shadow: 
+    0 0 5px 1px var(--color-emissive),
+    inset 0 0 5px 1px var(--color-emissive);
+}
+
+.form-input::placeholder {
+    font-family: 'Cormorant Infant';
+    font-size: 22px;
+}
+
+
+.form-label {
+    display: block;
+}
+
+.form-field {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.modal-icon-input {
+    fill: rgba(128, 128, 128, 0.8);
+    /* fill: var(--color-emissive); */
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    transition: fill 1s;
+}
+
+.form-input:focus + .modal-icon-input {
+    fill: var(--color-emissive);
+}
+
+.form-input:not(:placeholder-shown) + .modal-icon-input {
+    fill: var(--color-emissive);
+}
+
+/* Modal select */
 

@@ -53,14 +53,17 @@
     <main>
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-section__title">
-            Естетика, що відчувається з першого погляду
-          </h1>
-          <h2 class="hero-section__title__h2">
-            Архітектурна та інтер'єрна візуалізація, дизайн-проекти, графічний
-            дизайн і меблі власного виробництва - комплексні рішення від ідеї до
-            реалізації.
-          </h2>
+          <div class="hero-light"></div>
+          <div class="hero-text-overflow">
+            <h1 class="hero-section__title">
+              Естетика, що відчувається з першого погляду
+            </h1>
+            <h2 class="hero-section__title__h2">
+              Архітектурна та інтер'єрна візуалізація, дизайн-проекти, графічний
+              дизайн і меблі власного виробництва - комплексні рішення від ідеї
+              до реалізації.
+            </h2>
+          </div>
         </div>
       </section>
       <section class="advantages-section" id="advantages">
@@ -93,12 +96,26 @@
                 Наші переваги
               </h3>
               <ul>
-                <li>Понад 10 років досвіду у сфері дизайну</li>
-                <li>Фотореалістична ЗD візуалізація</li>
-                <li>Природні матеріали та авторський стиль</li>
-                <li>Повний супровід проекту</li>
-                <li>Власне виробництво меблів</li>
-                <li>Орієнтація на естетику та функціональність</li>
+                <li class="advantages-section_li_decor">
+                  Понад 10 років досвіду у сфері дизайну
+                </li>
+                <li class="advantages-section_li_decor">
+                  Фотореалістична ЗD візуалізація
+                </li>
+                <li class="advantages-section_li_decor">
+                  Природні матеріали та авторський <br />
+                  стиль
+                </li>
+                <li class="advantages-section_li_decor">
+                  Повний супровід проекту
+                </li>
+                <li class="advantages-section_li_decor">
+                  Власне виробництво меблів
+                </li>
+                <li class="advantages-section_li_decor">
+                  Орієнтація на естетику та <br />
+                  функціональність
+                </li>
               </ul>
             </div>
           </div>
@@ -382,10 +399,13 @@
         </div>
       </div>
     </footer>
+
     <div class="backdrop">
       <div class="modal">
         <button class="modal-button__close modal-btn-close" type="button">
-          x
+          <svg class="modal-icon" width="34" height="34">
+            <use href="./images/icons2.svg#icon-close"></use>
+          </svg>
         </button>
         <div class="logo-modal">
           <img
@@ -395,6 +415,95 @@
             alt="Логотип компанії"
           />
         </div>
+        <h2 class="modal-title">
+          Наші спеціалісти зв'яжуться з Вами у зручний для Вас час!
+        </h2>
+        <!-- <p>Заповніть форму щоб ми могли зв'язатись з Вами</p> -->
+        <form
+          class="order-form"
+          name="contact-form"
+          autocomplete="on"
+          novalidate
+        >
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-name"
+              >Ім'я, по батькові</label
+            >
+            <input
+              class="form-input"
+              id="user-name"
+              type="text"
+              name="user-name"
+              placeholder="Ім'я, по батькові"
+            />
+            <svg class="modal-icon-input" width="28" height="28">
+              <use href="./images/icons2.svg#icon-user-name"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="tel"
+              >Номер телефону</label
+            >
+            <input
+              class="form-input"
+              id="tel"
+              type="tel"
+              name="user-tel"
+              placeholder="Номер телефону"
+            />
+            <svg class="modal-icon-input" width="28" height="28">
+              <use href="./images/icons2.svg#icon-phone-number"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="email"
+              >Електронна пошта</label
+            >
+            <input
+              class="form-input"
+              id="email"
+              type="email"
+              name="user-email"
+              placeholder="Електронна пошта"
+            />
+            <svg class="modal-icon-input" width="28" height="28">
+              <use href="./images/icons2.svg#icon-email"></use>
+            </svg>
+          </div>
+
+          <div>
+            <select name="hour" id="">
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+            </select>
+
+            <select name="minute" id="">
+              <option value="00">00</option>
+              <option value="15">15</option>
+              <option value="30">30</option>
+              <option value="45">45</option>
+            </select>
+
+            <select name="day-week" id="">
+              <option value="Monday">Понеділок</option>
+              <option value="Tuesday">Вівторок</option>
+              <option value="Wednesday">Середа</option>
+              <option value="Thursday">Четвер</option>
+              <option value="Friday">П'ятниця</option>
+            </select>
+          </div>
+
+          <button type="submit">Зателефонувати</button>
+        </form>
       </div>
     </div>
 

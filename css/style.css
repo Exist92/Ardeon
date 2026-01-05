@@ -1,5 +1,21 @@
 /* Fonts */
 
+/* montserrat-100 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-weight: 100;
+    src: url('../fonts/montserrat-v31-latin-100.woff2') format('woff2');
+}
+
+/* montserrat-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: url('../fonts/montserrat-v31-latin-regular.woff2') format('woff2');
+}
+
 /* cormorant*/
 @font-face {
     font-display: swap;
@@ -91,6 +107,7 @@ body {
     /* font-family: ; */
     /* font-size: ; */
 }
+
 
 address {
     font-style: normal;
@@ -229,6 +246,11 @@ ul {
     left: 0;
     width: 100%;
 }
+
+/* .header-block.photoshop {
+    position: relative;
+    margin-bottom: 70px;
+} */
 
 .header-nav {
     display: flex;
@@ -1196,6 +1218,7 @@ address {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: box-shadow 1s linear, border 1s linear;
 }
 
 .modal-button__close:hover {
@@ -1205,9 +1228,9 @@ address {
     inset 0 0 3px 1px var(--color-emissive);
 }
 
-.modal-button__close:active {
+/* .modal-button__close:active {
     box-shadow: inset 0 0 15px 1px rgba(255, 255, 255, 0.8);
-}
+} */
 
 .modal-icon {
     fill: var(--color-primary-light);
@@ -1456,8 +1479,175 @@ address {
 
 
 .button-to-top-icon {
-    width: 50px;
-    height: 50px;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 7px;
+    top: 5px;
     fill: var(--color-emissive);
 }
 
+
+
+
+
+/* Photoshop page */
+
+.photo-hero-section {
+    padding: 200px 0 20px 0;
+    background-color: rgba(1, 1, 1, 0.3);
+    color: var(--color-primary-light);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', monospace;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.photo-section {
+    margin-bottom: 30px;
+}
+
+.photo-section-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.photo-section-wrap-coloumn {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.photo-section-wrap-coloumn__item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.photo-section-wrap-coloumn__item img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    transition: transform 0.3s linear, opacity 0.3s;
+}
+
+.photo-section-wrap-coloumn__item:hover img {
+    transform: scale(1.1);
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* backdrop-photoshop */
+
+.backdrop-photoshop {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    background-color: rgba(1, 1, 1, 0.9);
+    z-index: 1000;
+    opacity: 0;
+    visibility: none;
+    pointer-events: none;
+    transition: opacity 1s, visibility 1s;
+}
+
+.backdrop-photoshop.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+    
+}
+
+
+.modal-photoshop__close__btn {
+    padding: 5px;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: none;
+    transition: box-shadow 1s;
+}
+
+.modal-photoshop__close__btn:hover {
+    box-shadow: 0 0 5px 1px var(--color-emissive),
+    inset 0 0 5px 1px var(--color-emissive);
+}
+
+.modal-photoshop-icon {
+    fill: var(--color-primary-light);
+}
+
+.modal-image-wrapper {
+    position: relative;
+}
+.modal-image-wrapper img {
+    display: block;
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.modal-image-wrapper .before-image {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+    pointer-events: none;
+
+}
+
+.modal-image-wrapper.show-before .before-image {
+    opacity: 1;
+}
+
+.before-toogle-btn {
+    position: absolute;
+    padding: 10px;
+    top: 5%;
+    right: -70px;
+    transition: transform 0.4s linear, opacity 0.4s linear;
+    opacity: 0;
+    font-family: 'Cormorant';
+    font-size: 24px;
+    background-color: rgba(1, 1, 1, 0.3);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.before-toogle-btn:hover {
+    border: 1px solid white;
+    box-shadow: 0 0 5px 1px var(--color-emissive),
+    inset 0 0 5px 1px var(--color-emissive);
+}
+
+.before-toogle-btn:active {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+}
+
+.modal-image-wrapper:hover .before-toogle-btn {
+    transform: translate(-100px);
+    opacity: 1;
+}
+
+.modal-image-wrapper.disable-toggle .before-toogle-btn {
+    display: none !important;
+}

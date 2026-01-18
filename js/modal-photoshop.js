@@ -56,3 +56,4 @@ beforeToggle.addEventListener("touchstart", (e) => {
 beforeToggle.addEventListener("touchend", hideBefore);
 beforeToggle.addEventListener("touchcancel", hideBefore);
 
+

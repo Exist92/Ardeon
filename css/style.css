@@ -1732,6 +1732,14 @@ address {
     max-width: 1200px;
 }
 
+.maxslides-container {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
 .maxslides {
     position: relative;
     display: none;
@@ -1761,7 +1769,8 @@ address {
 .demo {
     height: 100%;
     object-fit: cover;
-    opacity: 0.6;
+    opacity: 0.6;user-select: none;
+    -webkit-user-select: none;
 }
 
 .prev,
@@ -1769,7 +1778,6 @@ address {
     cursor: pointer;
     position: absolute;
     top: 40%;
-    width: auto;
     padding: 16px;
     margin-top: -50px;
     color: white;
@@ -1778,10 +1786,15 @@ address {
     -webkit-user-select: none;
     border: 1px solid rgba(1, 1, 1, 0.9);
     transition: border 1s, box-shadow 1s;
+    transform: translateY(-50%);
 }
 
 .next {
-    right: 0;
+    right: -100px;
+}
+
+.prev {
+    left: -100px;
 }
 
 .prev:hover,
@@ -1804,3 +1817,5 @@ address {
     opacity: 1;
     cursor: pointer;
 }
+
+

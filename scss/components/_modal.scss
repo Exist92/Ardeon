@@ -1,0 +1,166 @@
+.backdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(26, 26, 26, 0.9);
+    z-index: 10;
+    padding: 20px;
+    transition: opacity 1s, visibility 1s;
+
+}
+
+.modal {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+    max-height: 700px;
+    /* overflow: auto; */
+    border: 1px solid var(--color-base-white);
+    box-shadow:
+        0 0 50px 1px var(--color-emissive),
+        inset 0 0 50px 1px var(--color-emissive),
+        inset 0 0 200px 80px rgba(26, 26, 26, 1),
+        inset 0 0 0 800px rgb(90, 90, 90);
+    display: flex;
+    padding: 10px 100px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-title {
+    color: var(--color-primary-brown);
+    text-align: center;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+
+
+/* .modal-button__close:active {
+    box-shadow: inset 0 0 15px 1px rgba(255, 255, 255, 0.8);
+} */
+
+.modal-icon {
+    fill: var(--color-primary-light);
+}
+
+/* Form */
+
+.order-form {
+    width: 100%;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 10px 10px 45px;
+    border: 1px solid rgba(49, 49, 49, 0.66);
+    background-color: rgba(49, 49, 49, 0.66);
+    transition: border 1s, box-shadow 1s;
+    font-family: 'Cormorant Infant';
+    font-size: 22px;
+    color: var(--color-emissive);
+}
+
+.form-input:focus {
+    border: 1px solid var(--color-base-white);
+    outline: none;
+    box-shadow:
+        0 0 5px 1px var(--color-emissive),
+        inset 0 0 5px 1px var(--color-emissive);
+}
+
+.form-input::placeholder {
+    font-family: 'Cormorant Infant';
+    font-size: 22px;
+}
+
+
+.form-label {
+    display: block;
+}
+
+.form-field {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.modal-icon-input {
+    fill: rgba(128, 128, 128, 0.8);
+    /* fill: var(--color-emissive); */
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    transition: fill 1s;
+}
+
+.form-input:focus+.modal-icon-input {
+    fill: var(--color-emissive);
+}
+
+.form-input:not(:placeholder-shown)+.modal-icon-input {
+    fill: var(--color-emissive);
+}
+
+
+
+/* Modal select */
+
+.select-menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.select-window {
+    color: var(--color-primary-brown);
+    text-align: center;
+    padding: 8px;
+    font-family: 'Cormorant Infant';
+    font-size: 22px;
+    background-color: rgba(49, 49, 49, 0.66);
+    outline: none;
+    border: 1px solid rgba(49, 49, 49, 0.66);
+    transition: border 1s, box-shadow 1s, color 1s;
+    cursor: pointer;
+}
+
+.select-window:focus {
+    color: var(--color-emissive);
+    border: 1px solid var(--color-base-white);
+    outline: none;
+    box-shadow:
+        0 0 5px 1px var(--color-emissive),
+        inset 0 0 5px 1px var(--color-emissive);
+}
+
+
+.select-window.hour {
+    font-family: 'Science Gothic';
+    font-size: 18px;
+    width: 100px;
+}
+
+.select-window.minute {
+    font-family: 'Science Gothic';
+    font-size: 18px;
+    width: 100px;
+}
+
+.select-window.day-week {
+    width: 278px;
+}

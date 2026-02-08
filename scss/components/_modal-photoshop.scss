@@ -1,0 +1,107 @@
+.backdrop-photoshop {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    background-color: rgba(1, 1, 1, 0.9);
+    z-index: 1000;
+    opacity: 0;
+    visibility: none;
+    pointer-events: none;
+    transition: opacity 1s, visibility 1s;
+}
+
+.backdrop-photoshop.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+
+}
+
+
+.modal-photoshop__close__btn {
+    padding: 5px;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: none;
+    transition: box-shadow 1s;
+}
+
+.modal-photoshop__close__btn:hover {
+    box-shadow: 0 0 5px 1px var(--color-emissive),
+        inset 0 0 5px 1px var(--color-emissive);
+}
+
+.modal-photoshop-icon {
+    fill: var(--color-primary-light);
+}
+
+.modal-image-wrapper {
+    position: relative;
+}
+
+.modal-image-wrapper img {
+    display: block;
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.modal-image-wrapper .before-image {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+    pointer-events: none;
+
+}
+
+.modal-image-wrapper.show-before .before-image {
+    opacity: 1;
+}
+
+.before-toogle-btn {
+    position: absolute;
+    padding: 10px;
+    top: 5%;
+    right: -70px;
+    transition: transform 0.4s linear, opacity 0.4s linear;
+    opacity: 0;
+    font-family: 'Cormorant';
+    font-size: 24px;
+    background-color: rgba(1, 1, 1, 0.3);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.before-toogle-btn:hover {
+    border: 1px solid white;
+    box-shadow: 0 0 5px 1px var(--color-emissive),
+        inset 0 0 5px 1px var(--color-emissive);
+}
+
+.before-toogle-btn:active {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+}
+
+.modal-image-wrapper:hover .before-toogle-btn {
+    transform: translate(-100px);
+    opacity: 1;
+}
+
+.modal-image-wrapper.disable-toggle .before-toogle-btn {
+    display: none !important;
+}

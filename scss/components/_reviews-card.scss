@@ -1,0 +1,68 @@
+.reviews-card {
+    position: relative;
+    border: 1px solid var(--color-primary-brown);
+    padding: 380px 30px 54px 30px;
+    width: 344px;
+    height: 544px;
+    text-align: center;
+}
+
+.reviews-card::before {
+    content: '';
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(1, 1, 1, 0.7);
+    backdrop-filter: blur(13px);
+    width: 100%;
+    height: 35%;
+
+}
+
+.reviews-card.Natalia {
+    z-index: -2;
+    background-image: url(../images/Natalia.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.reviews-card.Oleksandr {
+    z-index: -2;
+    background-image: url(../images/Oleksandr.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.reviews-card.Irina {
+    z-index: -2;
+    background-image: url(../images/Irina.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.reviews-card__stars {
+    position: absolute;
+    display: flex;
+    gap: 32px;
+    bottom: 28px;
+    left: 60px;
+}
+
+.star {
+    width: 18px;
+    height: 18px;
+    background-color: var(--color-emissive);
+    box-shadow:
+        inset 0 0 15px 1px rgba(1, 1, 1, 0.2),
+        0 0 15px 1px var(--color-emissive);
+    transform: rotate(-45deg);
+}
+
+.star.white {
+    background-color: var(--color-primary-light);
+    box-shadow: none;
+}

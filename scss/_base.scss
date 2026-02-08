@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+body {
+    font-family: 'Cormorant';
+    margin: 0;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+    background-image:
+        url(../images/body-background.jpg);
+    background-size: 1440px 1440px;
+    background-position: center;
+    background-repeat: repeat;
+    z-index: -99;
+    color: var(--color-primary-light);
+    /* font-family: ; */
+    /* font-size: ; */
+}
+
+
+address {
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1228px;
+    margin: 0 auto;
+    padding: 0 24px;
+}

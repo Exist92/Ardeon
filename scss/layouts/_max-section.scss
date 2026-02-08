@@ -1,0 +1,49 @@
+.max-section {
+    margin-bottom: 20px;
+}
+
+.max-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+}
+
+.max-content-card {
+    justify-content: flex-start;
+    flex-direction: column;
+    display: flex;
+    background-color: rgba(1, 1, 1, 0.2);
+    margin: 0;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid rgba(1, 1, 1, 0.1);
+    transition: color 1s, box-shadow 1s, background-color 1s, border 1s;
+}
+
+.max-content-card:hover {
+    background-color: rgba(14, 14, 14, 0.8);
+    box-shadow: 0 0 5px 1px var(--color-emissive),
+        inset 0 0 5px 1px var(--color-emissive);
+    border: 1px solid var(--color-primary-light);
+    color: var(--color-emissive);
+}
+
+.max-content-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
+
+}
+
+.max-content-card-text {
+    margin-bottom: 5px;
+}

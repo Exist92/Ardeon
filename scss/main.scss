@@ -1,0 +1,52 @@
+
+@use './base';
+
+@use './utils/variables';
+
+@use './utils/fonts';
+
+@use './utils/utils';
+
+@use './components/buttons';
+
+@use './layouts/header';
+
+@use './components/preloader';
+
+@use './layouts/hero-section';
+
+@use './components/links';
+
+@use './layouts/advantages-section';
+
+@use './layouts/services-section';
+
+@use './layouts/reviews-section';
+
+@use './components/reviews-card';
+
+@use './components/reviews-arrow';
+
+@use './layouts/footer';
+
+@use './components/modal';
+
+@use './layouts/photo-hero-section';
+
+@use './layouts/photo-section';
+
+@use './components/modal-photoshop';
+
+@use './layouts/max-section';
+
+@use './components/modal-max';
+
+@use './layouts/catalog-hero-section';
+
+@use './layouts/catalog-product-section';
+
+@use './utils/mixin';
+
+
+
+

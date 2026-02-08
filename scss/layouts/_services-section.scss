@@ -1,0 +1,238 @@
+.services-section {
+    margin-bottom: 90px;
+}
+
+.services-section h3,
+h4 {
+    margin: 0 0 16px 0;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: none;
+}
+
+.services-section p {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.services-section__title {
+    margin: 0 0 25px 0;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Cormorant Infant';
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.services-section__decor {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    gap: 15px;
+}
+
+.services-section__decor::before {
+    content: '';
+    position: absolute;
+    width: 1180px;
+    height: 1px;
+    background-color: var(--color-primary-light);
+    top: -17px;
+    box-shadow:
+        0 -5px 15px #00d4ff,
+        /* Свечение СВЕРХУ (отрицательный y-offset) */
+        0 5px 15px #00d4ff;
+    /* Свечение СНИЗУ (положительный y-offset) */
+    ;
+}
+
+.services-section__romb {
+    background-color: var(--color-base-white);
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    margin-bottom: 25px;
+}
+
+
+
+.services-section__deer {
+    position: relative;
+    width: 724px;
+    height: 434px;
+    overflow: hidden;
+}
+
+.services-section__deer video {
+    width: 724px;
+    height: 434px;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.services-section__deer .services-section__deer__text {
+    flex-direction: column;
+    position: absolute;
+    padding: 20px;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    text-align: left;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.services-section__deer:hover .services-section__deer__text {
+    opacity: 0;
+}
+
+.services-section__computer {
+    position: relative;
+    width: 450px;
+    height: 434px;
+    overflow: hidden;
+}
+
+.services-section__computer video {
+    width: 450px;
+    height: 434px;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.services-section__computer .services-section__computer__text {
+    flex-direction: column;
+    position: absolute;
+    padding: 20px;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    text-align: left;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.services-section__computer:hover .services-section__computer__text {
+    opacity: 0;
+}
+
+.services-section__top-part {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin: 0 0 6px 0;
+}
+
+.services-section__blueprint {
+    position: relative;
+    width: 450px;
+    height: 434px;
+    overflow: hidden;
+}
+
+.services-section__blueprint video {
+    width: 450px;
+    height: 434px;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.services-section__blueprint .services-section__blueprint__text {
+    flex-direction: column;
+    position: absolute;
+    padding: 20px;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    text-align: left;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.services-section__blueprint:hover .services-section__blueprint__text {
+    opacity: 0;
+}
+
+.services-section__interior {
+    position: relative;
+    width: 724px;
+    height: 434px;
+    overflow: hidden;
+}
+
+.services-section__interior video {
+    width: 724px;
+    height: 434px;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.services-section__interior .services-section__interior__text {
+    flex-direction: column;
+    position: absolute;
+    padding: 20px;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    text-align: left;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.services-section__interior:hover .services-section__interior__text {
+    opacity: 0;
+}
+
+.services-section__woodwork {
+    position: relative;
+    width: 1180px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.services-section__woodwork video {
+    width: 1180px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center bottom;
+    pointer-events: none;
+}
+
+.services-section__woodwork .services-section__woodwork__text {
+    flex-direction: column;
+    position: absolute;
+    padding: 20px;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    text-align: left;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.services-section__woodwork:hover .services-section__woodwork__text {
+    opacity: 0;
+}
+
+.services-section__bottom-part {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 40px 0;
+}

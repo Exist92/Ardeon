@@ -1,0 +1,49 @@
+a {
+    text-decoration: none;
+}
+
+.header-link {
+    /* color:var(--color-primary-brown); */
+    font-family: 'Cormorant';
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-primary-light);
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.header-link:hover {
+    color: var(--color-primary-brown);
+}
+
+.header-link__dropdawn {
+    color: var(--color-primary-light);
+    text-transform: uppercase;
+    font-family: 'Cormorant';
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.5s, text-shadow 0.5s;
+}
+
+.header-link__dropdawn:hover {
+    text-shadow: 0 0 15px var(--color-emissive);
+    color: var(--color-primary-brown)
+}
+
+.footer-link {
+    font-family: 'Cormorant Infant';
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--color-primary-brown);
+    transition: color 0.5s;
+}
+
+.footer-link:hover {
+    color: var(--color-primary-light);
+}
+
+.footer-link.address {
+    font-size: 18px;
+    font-weight: 500;
+}

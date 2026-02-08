@@ -1,0 +1,283 @@
+.button-order {
+    font-family: 'Cormorant';
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-primary-light);
+    text-transform: uppercase;
+    width: 164px;
+    height: 55px;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    box-shadow:
+        0 0 9px 1px rgba(255, 255, 255, 1),
+        /* смещение, размытие, spread (толщина), цвет прозрачность */
+        inset 0 0 9px 1px rgba(255, 255, 255, 1);
+    /* inner glow */
+    ;
+    cursor: pointer;
+}
+
+.button-order:hover {
+    box-shadow:
+        0 0 30px 8px rgba(255, 255, 255, 0.5),
+        inset 0 0 30px 8px rgba(255, 255, 255, 0.5);
+}
+
+.button-order:active {
+    background-color: rgba(245, 202, 159, 0.2);
+    box-shadow:
+        0 0 30px 8px rgba(255, 255, 255, 0.5),
+        inset 0 0 30px 8px rgba(255, 255, 255, 0.5);
+}
+
+
+
+.header-nav__bar__dropdawn-button {
+    padding: 0;
+    font-family: 'Cormorant';
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-primary-light);
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+}
+
+.header-nav__bar__dropdawn-button:hover {
+    color: var(--color-primary-brown);
+    cursor: pointer;
+
+}
+
+
+.reviews-arrow-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0 15px;
+}
+
+.modal-button__close {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    width: 34px;
+    height: 34px;
+    right: 26px;
+    top: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: box-shadow 1s linear, border 1s linear;
+}
+
+.modal-button__close:hover {
+    border: 1px solid var(--color-base-white);
+    box-shadow:
+        0 0 3px 1px var(--color-emissive),
+        inset 0 0 3px 1px var(--color-emissive);
+}
+
+
+
+
+.form-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-button {
+    font-family: 'Cormorant';
+    padding: 24px 17px;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-primary-brown);
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    /* box-shadow:
+    0 0 9px 1px var(--color-emissive),
+    inset 0 0 9px 1px var(--color-emissive); */
+    cursor: pointer;
+    transition: box-shadow 1s, color 1s, background-color 1s, outline-color 1s, utline-offset 1s;
+    animation-name: from-button-light;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.form-button:hover {
+    color: var(--color-primary-light);
+    background-color: rgba(1, 1, 1, 0.2);
+}
+
+.form-button:active {
+    box-shadow: inset 0 0 40px 2px rgba(255, 255, 255, 0.7);
+}
+
+@keyframes from-button-light {
+    0% {
+        box-shadow:
+            0 0 12px 1px var(--color-emissive),
+            inset 0 0 12px 1px var(--color-emissive);
+    }
+
+    50% {
+        box-shadow:
+            0 0 2px 1px var(--color-emissive),
+            inset 0 0 2px 1px var(--color-emissive);
+
+    }
+
+    100% {
+        box-shadow:
+            0 0 12px 1px var(--color-emissive),
+            inset 0 0 12px 1px var(--color-emissive);
+    }
+}
+
+
+/* Button to top */
+
+.button-to-top {
+    display: none;
+    cursor: pointer;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: fixed;
+    background-color: transparent;
+    bottom: 150px;
+    right: 70px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--color-base-white);
+    box-shadow: 0 0 5px 1px var(--color-emissive),
+        inset 0 0 5px 1px var(--color-emissive);
+    animation-name: button-to-top;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 99;
+}
+
+@keyframes button-to-top {
+    0% {
+        box-shadow: 0 0 5px 1px var(--color-emissive),
+            inset 0 0 5px 1px var(--color-emissive);
+    }
+
+    50% {
+        box-shadow: 0 0 15px 1px var(--color-emissive),
+            inset 0 0 10px 1px var(--color-emissive);
+    }
+
+    100% {
+        box-shadow: 0 0 5px 1px var(--color-emissive),
+            inset 0 0 5px 1px var(--color-emissive);
+    }
+}
+
+.button-to-top:hover {
+    animation-name: button-to-top-hover;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes button-to-top-hover {
+    0% {
+        /* outline: 1px solid var(--color-base-white); */
+        transform: scale(1);
+    }
+
+    100% {
+        /* outline: 1px solid var(--color-base-white); */
+        transform: scale(2);
+        opacity: 0;
+    }
+
+}
+
+.button-to-top:active {
+    animation-name: button-to-top-active;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 0.1s;
+}
+
+@keyframes button-to-top-active {
+    0% {
+        transform: translate(0)
+    }
+
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+
+.button-to-top-icon {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 7px;
+    top: 5px;
+    fill: var(--color-emissive);
+}
+
+
+.sorting-button {
+    color: black;
+    border: none;
+    background-color: var(--color-primary-brown);
+    box-shadow: inset 0 0 10px 2px rgba(1, 1, 1, 0.8);
+    padding: 5px 10px;
+    font-family: 'Cormorant';
+    font-size: 22px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+.sorting-button:hover {
+    background-color: var(--color-primary-light);
+}
+
+.sorting-button.active {
+    background-color: var(--color-secondary-brown);
+}
+
+
+.buy-button {
+    color: var(--color-primary-brown);
+    background-color: transparent;
+    box-shadow: 0 0 5px 1px var(--color-emissive),
+        inset 0 0 5px 1px var(--color-emissive);
+    border: solid 1px white;
+    margin: 0 auto 10px;
+    padding: 10px 32px;
+    font-family: 'Cormorant';
+    font-size: 22px;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+    /* border-radius: 8px; */
+}
+
+.buy-button:hover {
+    background-color: rgba(1, 1, 1, 0.3);
+    color: var(--color-base-white);
+    box-shadow: 0 0 5px 1px var(--color-base-white),
+        inset 0 0 5px 1px var(--color-base-white);
+}
+
+.buy-button:active {
+    background-color: rgba(255, 255, 255, 0.3);
+}

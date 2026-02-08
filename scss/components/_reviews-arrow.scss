@@ -1,0 +1,13 @@
+.reviews-arrow-ico {
+    fill: var(--color-primary-brown);
+    transition: fill 0.3s, transform 0.3s;
+}
+
+.reviews-arrow-ico:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.reviews-arrow-ico:active {
+    fill: var(--color-primary-darkt);
+}

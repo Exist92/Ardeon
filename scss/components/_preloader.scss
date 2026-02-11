@@ -10,6 +10,14 @@
     animation-duration: 4s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
+
+    &__logo {
+        animation-name: logo-apear;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
 }
 
 @keyframes preloader-apear {
@@ -30,13 +38,7 @@
 }
 
 
-.preloader__logo {
-    animation-name: logo-apear;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
+
 
 @keyframes logo-apear {
     0% {

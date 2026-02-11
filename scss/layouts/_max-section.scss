@@ -1,15 +1,17 @@
 .max-section {
     margin-bottom: 20px;
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 30px;
+    }
 }
 
-.max-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 30px;
-}
+
 
 .max-content-card {
     justify-content: flex-start;
@@ -26,6 +28,19 @@
     cursor: pointer;
     border: 1px solid rgba(1, 1, 1, 0.1);
     transition: color 1s, box-shadow 1s, background-color 1s, border 1s;
+
+
+    &__image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 15px;
+
+    }
+
+    &__text {
+        margin-bottom: 5px;
+    }
 }
 
 .max-content-card:hover {
@@ -36,14 +51,5 @@
     color: var(--color-emissive);
 }
 
-.max-content-image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    margin-bottom: 15px;
 
-}
 
-.max-content-card-text {
-    margin-bottom: 5px;
-}

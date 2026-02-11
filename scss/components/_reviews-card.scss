@@ -5,6 +5,58 @@
     width: 344px;
     height: 544px;
     text-align: center;
+
+
+    &--Natalia {
+        z-index: -2;
+        background-image: url(../images/Natalia.jpg);
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    &--Oleksandr {
+        z-index: -2;
+        background-image: url(../images/Oleksandr.jpg);
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    &--Irina {
+        z-index: -2;
+        background-image: url(../images/Irina.jpg);
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+
+    &__stars {
+        position: absolute;
+        display: flex;
+        gap: 32px;
+        bottom: 28px;
+        left: 60px;
+
+        &__star {
+            width: 18px;
+            height: 18px;
+            background-color: var(--color-emissive);
+            box-shadow:
+                inset 0 0 15px 1px rgba(1, 1, 1, 0.2),
+                0 0 15px 1px var(--color-emissive);
+            transform: rotate(-45deg);
+        }
+
+        &__star.white {
+            background-color: var(--color-primary-light);
+            box-shadow: none;
+        }    
+
+    }
+
+
 }
 
 .reviews-card::before {
@@ -20,49 +72,11 @@
 
 }
 
-.reviews-card.Natalia {
-    z-index: -2;
-    background-image: url(../images/Natalia.jpg);
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-}
 
-.reviews-card.Oleksandr {
-    z-index: -2;
-    background-image: url(../images/Oleksandr.jpg);
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-}
 
-.reviews-card.Irina {
-    z-index: -2;
-    background-image: url(../images/Irina.jpg);
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-}
 
-.reviews-card__stars {
-    position: absolute;
-    display: flex;
-    gap: 32px;
-    bottom: 28px;
-    left: 60px;
-}
 
-.star {
-    width: 18px;
-    height: 18px;
-    background-color: var(--color-emissive);
-    box-shadow:
-        inset 0 0 15px 1px rgba(1, 1, 1, 0.2),
-        0 0 15px 1px var(--color-emissive);
-    transform: rotate(-45deg);
-}
 
-.star.white {
-    background-color: var(--color-primary-light);
-    box-shadow: none;
-}
+
+
+

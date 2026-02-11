@@ -1,44 +1,73 @@
 .reviews-section {
     margin-bottom: 144px;
+
+    &__decor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        position: relative;
+
+        &__romb {
+            background-color: var(--color-base-white);
+            width: 12px;
+            height: 12px;
+            transform: rotate(45deg);
+            margin-bottom: 25px;
+        }
+
+        &__title {
+            font-size: 28px;
+            font-weight: 600;
+            font-family: 'Cormorant Infant';
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+    }
+
+    &__decor::before {
+        content: '';
+        position: absolute;
+        width: 1074px;
+        height: 1px;
+        background-color: var(--color-primary-light);
+        top: -17px;
+        left: center;
+        box-shadow:
+            0 -5px 15px #00d4ff,
+            0 5px 15px #00d4ff;
+        left: 52px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__list {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            position: relative;
+        }
+
+        &__list::after {
+            content: '';
+            position: absolute;
+            width: 1074px;
+            height: 1px;
+            background-color: var(--color-primary-light);
+            bottom: -96px;
+            box-shadow:
+            0 -5px 15px #00d4ff,
+            0 5px 15px #00d4ff;
+        }
+
+    }
+    
 }
 
-.reviews-section__decor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    position: relative;
-}
-
-.reviews-section__decor::before {
-    content: '';
-    position: absolute;
-    width: 1074px;
-    height: 1px;
-    background-color: var(--color-primary-light);
-    top: -17px;
-    left: center;
-    box-shadow:
-        0 -5px 15px #00d4ff,
-        0 5px 15px #00d4ff;
-    left: 52px;
-}
-
-.reviews-section__romb {
-    background-color: var(--color-base-white);
-    width: 12px;
-    height: 12px;
-    transform: rotate(45deg);
-    margin-bottom: 25px;
-}
-
-.reviews-section__title {
-    font-size: 28px;
-    font-weight: 600;
-    font-family: 'Cormorant Infant';
-    text-transform: uppercase;
-    text-align: center;
-}
 
 .reviews-section h3 {
     margin-bottom: 2px;
@@ -52,34 +81,4 @@
     color: var(--color-primary-brown);
     font-size: 22px;
     font-weight: 400;
-}
-
-.reviews-list {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    position: relative;
-}
-
-/* Arrow button */
-
-.reviews-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-
-.reviews-list::after {
-    content: '';
-    position: absolute;
-    width: 1074px;
-    height: 1px;
-    background-color: var(--color-primary-light);
-    bottom: -96px;
-    box-shadow:
-        0 -5px 15px #00d4ff,
-        0 5px 15px #00d4ff;
 }

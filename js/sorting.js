@@ -26,8 +26,8 @@ sortingButtons.forEach(button => {
 
     if (type === 'Новинки') {
       sortedCards.sort((a, b) => {
-        const aNew = a.querySelector('.product-new') ? 1 : 0;
-        const bNew = b.querySelector('.product-new') ? 1 : 0;
+        const aNew = a.querySelector('.product-card__new') ? 1 : 0;
+        const bNew = b.querySelector('.product-card__new') ? 1 : 0;
         return bNew - aNew;
       });
     }
@@ -51,7 +51,7 @@ sortingButtons.forEach(button => {
 });
 
 function getPrice(card) {
-  const priceText = card.querySelector('.product-description span')?.textContent || '0';
+  const priceText = card.querySelector('.product-card__description span')?.textContent || '0';
   return parseInt(priceText);
 }
 

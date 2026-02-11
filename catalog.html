@@ -8,9 +8,9 @@
   </head>
   <body>
     <header>
-      <div class="container-header">
-        <div class="header-block photoshop">
-          <div class="logo-header">
+      <div class="container__header">
+        <div class="header__block">
+          <div class="header__block__logo">
             <a href="./home.html">
               <img
                 width="113"
@@ -20,33 +20,33 @@
               />
             </a>
           </div>
-          <div class="header-nav">
-            <div class="header-nav__diamond">
-              <div class="header-nav__diamond__light"></div>
+          <div class="header__nav">
+            <div class="header__nav__diamond">
+              <div class="header__nav__diamond__light"></div>
             </div>
             <nav>
-              <div class="header-nav__bar">
-                <div class="header-nav__bar__dropdawn">
-                  <button class="header-nav__bar__dropdawn-button nav-item">
+              <div class="header__nav__bar">
+                <div class="header__nav__bar__dropdawn">
+                  <button class="header__nav__bar__dropdawn__button nav__item">
                     Портфоліо
                   </button>
-                  <div class="header-nav__bar__dropdawn-content">
-                    <a class="header-link__dropdawn" href="./3dsmax.html"
+                  <div class="header__nav__bar__dropdawn__content">
+                    <a class="header__link__dropdawn" href="./3dsmax.html"
                       >Зds max</a
                     >
-                    <a class="header-link__dropdawn" href="./photoshop.html"
+                    <a class="header__link__dropdawn" href="./photoshop.html"
                       >photoshop</a
                     >
                   </div>
                 </div>
-                <a class="header-link nav-item" href="home.html#services"
-                  >Послуги</a
+                <a class="header__link nav__item" href="#services">Послуги</a>
+                <a class="header__link nav__item" href="catalog.html"
+                  >Каталог</a
                 >
-                <a class="header-link nav-item" href="catalog.html">Каталог</a>
-                <a class="header-link nav-item" href="home.html#reviews"
+                <a class="header__link nav__item" href="./home.html#reviews"
                   >Відгуки</a
                 >
-                <a class="header-link nav-item" href="#contact">Контакти</a>
+                <a class="header__link nav__item" href="#contact">Контакти</a>
               </div>
             </nav>
           </div>
@@ -75,9 +75,9 @@
         <div class="container">
           <div class="catalog-hero-section__wrap">
             <div>
-              <h1 class="catalog-section__title">Каталог товарів</h1>
+              <h1 class="catalog-hero-section__wrap__title">Каталог товарів</h1>
             </div>
-            <div class="sorting-bar">
+            <div class="catalog-hero-section__wrap__sorting-bar">
               <p>Cортувати:</p>
               <button class="sorting-button" type="button">Рейтинг</button>
               <button class="sorting-button" type="button">Дешеві</button>
@@ -94,10 +94,14 @@
         <div class="container">
           <div class="product-section__wrap">
             <div class="product-card">
-              <img class="product-image" src="./images/table.jpg" alt="table" />
-              <div class="product-raiting">
-                <p class="product-tittle">Vendor code: 38712</p>
-                <div class="star-catalog">
+              <img
+                class="product-card__image"
+                src="./images/table.jpg"
+                alt="table"
+              />
+              <div class="product-card__raiting">
+                <p class="product-card__raiting__tittle">Vendor code: 38712</p>
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -105,7 +109,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -113,7 +117,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -121,7 +125,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -129,7 +133,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_white.svg"
                     alt="star"
@@ -138,23 +142,25 @@
                   />
                 </div>
               </div>
-              <p class="product-description">
+              <p class="product-card__description">
                 Стіл письмовий Гербор Офіс-Лайн 140x70 см
               </p>
-              <p class="product-description">
+              <p class="product-card__description">
                 <span>5599 грн.</span> 4900 грн.
               </p>
-              <button class="buy-button" type="button">Купити</button>
+              <button class="product-card__buy-button" type="button">
+                Купити
+              </button>
             </div>
             <div class="product-card">
               <img
-                class="product-image"
+                class="product-card__image"
                 src="./images/chair1.jpg"
                 alt="chair1"
               />
-              <div class="product-raiting">
-                <p class="product-tittle">Vendor code: 38745</p>
-                <div class="star-catalog">
+              <div class="product-card__raiting">
+                <p class="product-card__raiting__tittle">Vendor code: 38745</p>
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -162,7 +168,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -170,7 +176,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -178,7 +184,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_white.svg"
                     alt="star"
@@ -186,7 +192,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_white.svg"
                     alt="star"
@@ -195,22 +201,24 @@
                   />
                 </div>
               </div>
-              <p class="product-description">
+              <p class="product-card__description">
                 Класичне м'яке крісло "Деко-Еліт"
               </p>
-              <p class="product-description">2800 грн.</p>
-              <button class="buy-button" type="button">Купити</button>
-              <div class="product-new"><p>new</p></div>
+              <p class="product-card__description">2800 грн.</p>
+              <button class="product-card__buy-button" type="button">
+                Купити
+              </button>
+              <div class="product-card__new"><p>new</p></div>
             </div>
             <div class="product-card">
               <img
-                class="product-image"
+                class="product-card__image"
                 src="./images/chair2.jpg"
                 alt="chair2"
               />
-              <div class="product-raiting">
-                <p class="product-tittle">Vendor code: 38723</p>
-                <div class="star-catalog">
+              <div class="product-card__raiting">
+                <p class="product-card__raiting__tittle">Vendor code: 38723</p>
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -218,7 +226,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -226,7 +234,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -234,7 +242,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -242,7 +250,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_white.svg"
                     alt="star"
@@ -251,23 +259,25 @@
                   />
                 </div>
               </div>
-              <p class="product-description">
+              <p class="product-card__description">
                 Класичне м'яке крісло "Опера-Еліт"
               </p>
-              <p class="product-description">
+              <p class="product-card__description">
                 <span>3100 грн.</span> 2500 грн.
               </p>
-              <button class="buy-button" type="button">Купити</button>
+              <button class="product-card__buy-button" type="button">
+                Купити
+              </button>
             </div>
             <div class="product-card">
               <img
-                class="product-image"
+                class="product-card__image"
                 src="./images/chair3.jpg"
                 alt="chair3"
               />
-              <div class="product-raiting">
-                <p class="product-tittle">Vendor code: 38321</p>
-                <div class="star-catalog">
+              <div class="product-card__raiting">
+                <p class="product-card__raiting__tittle">Vendor code: 38321</p>
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -275,7 +285,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -283,7 +293,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -291,7 +301,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -299,7 +309,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -308,22 +318,24 @@
                   />
                 </div>
               </div>
-              <p class="product-description">
+              <p class="product-card__description">
                 Крісло м'яке Just SIT IMPERIA велюр
               </p>
-              <p class="product-description">2600 грн.</p>
-              <button class="buy-button" type="button">Купити</button>
-              <div class="product-new"><p>new</p></div>
+              <p class="product-card__description">2600 грн.</p>
+              <button class="product-card__buy-button" type="button">
+                Купити
+              </button>
+              <div class="product-card__new"><p>new</p></div>
             </div>
             <div class="product-card">
               <img
-                class="product-image"
+                class="product-card__image"
                 src="./images/chair4.jpg"
                 alt="chair4"
               />
-              <div class="product-raiting">
-                <p class="product-tittle">Vendor code: 38543</p>
-                <div class="star-catalog">
+              <div class="product-card__raiting">
+                <p class="product-card__raiting__tittle">Vendor code: 38543</p>
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -331,7 +343,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -339,7 +351,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -347,7 +359,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -355,7 +367,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -364,19 +376,23 @@
                   />
                 </div>
               </div>
-              <p class="product-description">Крісло-реклайнер Agata Sofa</p>
-              <p class="product-description">4600 грн.</p>
-              <button class="buy-button" type="button">Купити</button>
+              <p class="product-card__description">
+                Крісло-реклайнер Agata Sofa
+              </p>
+              <p class="product-card__description">4600 грн.</p>
+              <button class="product-card__buy-button" type="button">
+                Купити
+              </button>
             </div>
             <div class="product-card">
               <img
-                class="product-image"
+                class="product-card__image"
                 src="./images/chair5.jpg"
                 alt="chair4"
               />
-              <div class="product-raiting">
-                <p class="product-tittle">Vendor code: 38545</p>
-                <div class="star-catalog">
+              <div class="product-card__raiting">
+                <p class="product-card__raiting__tittle">Vendor code: 38545</p>
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -384,7 +400,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -392,7 +408,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -400,7 +416,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -408,7 +424,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_white.svg"
                     alt="star"
@@ -417,18 +433,26 @@
                   />
                 </div>
               </div>
-              <p class="product-description">Крісло-реклайнер Agata Sofa</p>
-              <p class="product-description">
+              <p class="product-card__description">
+                Крісло-реклайнер Agata Sofa
+              </p>
+              <p class="product-card__description">
                 <span>6700 грн.</span> 5900 грн.
               </p>
-              <button class="buy-button" type="button">Купити</button>
-              <div class="product-new"><p>new</p></div>
+              <button class="product-card__buy-button" type="button">
+                Купити
+              </button>
+              <div class="product-card__new"><p>new</p></div>
             </div>
             <div class="product-card">
-              <img class="product-image" src="./images/table.jpg" alt="table" />
-              <div class="product-raiting">
-                <p class="product-tittle">Vendor code: 38712</p>
-                <div class="star-catalog">
+              <img
+                class="product-card__image"
+                src="./images/table.jpg"
+                alt="table"
+              />
+              <div class="product-card__raiting">
+                <p class="product-card__raiting__tittle">Vendor code: 38712</p>
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -436,7 +460,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -444,7 +468,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -452,7 +476,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -460,7 +484,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_white.svg"
                     alt="star"
@@ -469,21 +493,23 @@
                   />
                 </div>
               </div>
-              <p class="product-description">
+              <p class="product-card__description">
                 Стіл письмовий Гербор Офіс-Лайн 140x70 см
               </p>
-              <p class="product-description">4900 грн.</p>
-              <button class="buy-button" type="button">Купити</button>
+              <p class="product-card__description">4900 грн.</p>
+              <button class="product-card__buy-button" type="button">
+                Купити
+              </button>
             </div>
             <div class="product-card">
               <img
-                class="product-image"
+                class="product-card__image"
                 src="./images/chair1.jpg"
                 alt="chair1"
               />
-              <div class="product-raiting">
-                <p class="product-tittle">Vendor code: 38745</p>
-                <div class="star-catalog">
+              <div class="product-card__raiting">
+                <p class="product-card__raiting__tittle">Vendor code: 38745</p>
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -491,7 +517,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -499,7 +525,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -507,7 +533,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_white.svg"
                     alt="star"
@@ -515,7 +541,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_white.svg"
                     alt="star"
@@ -524,21 +550,23 @@
                   />
                 </div>
               </div>
-              <p class="product-description">
+              <p class="product-card__description">
                 Класичне м'яке крісло "Деко-Еліт"
               </p>
-              <p class="product-description">2800 грн.</p>
-              <button class="buy-button" type="button">Купити</button>
+              <p class="product-card__description">2800 грн.</p>
+              <button class="product-card__buy-button" type="button">
+                Купити
+              </button>
             </div>
             <div class="product-card">
               <img
-                class="product-image"
+                class="product-card__image"
                 src="./images/chair2.jpg"
                 alt="chair2"
               />
-              <div class="product-raiting">
-                <p class="product-tittle">Vendor code: 38723</p>
-                <div class="star-catalog">
+              <div class="product-card__raiting">
+                <p class="product-card__raiting__tittle">Vendor code: 38723</p>
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -546,7 +574,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -554,7 +582,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -562,7 +590,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -570,7 +598,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_white.svg"
                     alt="star"
@@ -579,23 +607,25 @@
                   />
                 </div>
               </div>
-              <p class="product-description">
+              <p class="product-card__description">
                 Класичне м'яке крісло "Опера-Еліт"
               </p>
-              <p class="product-description">
+              <p class="product-card__description">
                 <span>3100 грн.</span> 2500 грн.
               </p>
-              <button class="buy-button" type="button">Купити</button>
+              <button class="product-card__buy-button" type="button">
+                Купити
+              </button>
             </div>
             <div class="product-card">
               <img
-                class="product-image"
+                class="product-card__image"
                 src="./images/chair3.jpg"
                 alt="chair3"
               />
-              <div class="product-raiting">
-                <p class="product-tittle">Vendor code: 38321</p>
-                <div class="star-catalog">
+              <div class="product-card__raiting">
+                <p class="product-card__raiting__tittle">Vendor code: 38321</p>
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -603,7 +633,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -611,7 +641,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -619,7 +649,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -627,7 +657,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -636,21 +666,23 @@
                   />
                 </div>
               </div>
-              <p class="product-description">
+              <p class="product-card__description">
                 Крісло м'яке Just SIT IMPERIA велюр
               </p>
-              <p class="product-description">2600 грн.</p>
-              <button class="buy-button" type="button">Купити</button>
+              <p class="product-card__description">2600 грн.</p>
+              <button class="product-card__buy-button" type="button">
+                Купити
+              </button>
             </div>
             <div class="product-card">
               <img
-                class="product-image"
+                class="product-card__image"
                 src="./images/chair4.jpg"
                 alt="chair4"
               />
-              <div class="product-raiting">
-                <p class="product-tittle">Vendor code: 38543</p>
-                <div class="star-catalog">
+              <div class="product-card__raiting">
+                <p class="product-card__raiting__tittle">Vendor code: 38543</p>
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -658,7 +690,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -666,7 +698,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -674,7 +706,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -682,7 +714,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -691,21 +723,25 @@
                   />
                 </div>
               </div>
-              <p class="product-description">Крісло-реклайнер Agata Sofa</p>
-              <p class="product-description">
+              <p class="product-card__description">
+                Крісло-реклайнер Agata Sofa
+              </p>
+              <p class="product-card__description">
                 <span>4800 грн.</span> 4600 грн.
               </p>
-              <button class="buy-button" type="button">Купити</button>
+              <button class="product-card__buy-button" type="button">
+                Купити
+              </button>
             </div>
             <div class="product-card">
               <img
-                class="product-image"
+                class="product-card__image"
                 src="./images/chair5.jpg"
                 alt="chair4"
               />
-              <div class="product-raiting">
-                <p class="product-tittle">Vendor code: 38545</p>
-                <div class="star-catalog">
+              <div class="product-card__raiting">
+                <p class="product-card__raiting__tittle">Vendor code: 38545</p>
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -713,7 +749,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -721,7 +757,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -729,7 +765,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_yellow.svg"
                     alt="star"
@@ -737,7 +773,7 @@
                     height="16px"
                   />
                 </div>
-                <div class="star-catalog">
+                <div class="product-card__raiting__star">
                   <img
                     src="./images/Star_white.svg"
                     alt="star"
@@ -746,32 +782,38 @@
                   />
                 </div>
               </div>
-              <p class="product-description">Крісло-реклайнер Agata Sofa</p>
-              <p class="product-description">
+              <p class="product-card__description">
+                Крісло-реклайнер Agata Sofa
+              </p>
+              <p class="product-card__description">
                 <span>6700 грн.</span> 5900 грн.
               </p>
-              <button class="buy-button" type="button">Купити</button>
+              <button class="product-card__buy-button" type="button">
+                Купити
+              </button>
             </div>
             <div class="product-pages">
-              <a class="pages-link" href="#">&laquo;</a>
-              <a class="pages-link pages-active" href="#">1</a>
-              <a class="pages-link" href="#">2</a>
-              <a class="pages-link" href="#">3</a>
-              <a class="pages-link" href="#">4</a>
-              <a class="pages-link" href="#">5</a>
-              <a class="pages-link" href="#">6</a>
-              <a class="pages-link" href="#">&raquo;</a>
+              <a class="product-pages__link" href="#">&laquo;</a>
+              <a class="product-pages__link product-pages__active" href="#"
+                >1</a
+              >
+              <a class="product-pages__link" href="#">2</a>
+              <a class="product-pages__link" href="#">3</a>
+              <a class="product-pages__link" href="#">4</a>
+              <a class="product-pages__link" href="#">5</a>
+              <a class="product-pages__link" href="#">6</a>
+              <a class="product-pages__link" href="#">&raquo;</a>
             </div>
           </div>
         </div>
       </section>
     </main>
     <!-- Футер -->
-    <footer class="footer-box" id="contact">
+    <footer class="footer-section" id="contact">
       <div class="container">
-        <div class="footer-items">
-          <div class="test-box"></div>
-          <div class="logo-footer">
+        <div class="footer-section__wrap">
+          <div class="footer-section__wrap__box"></div>
+          <div class="footer-section__wrap__logo">
             <a href="./home.html">
               <img
                 width="153"
@@ -784,26 +826,20 @@
           <div>
             <nav>
               <ul>
-                <li>
-                  <a class="footer-link" href="home.html#advantages">Про нас</a>
-                </li>
-                <li>
-                  <a class="footer-link" href="#home.html#services">Послуги</a>
-                </li>
+                <li><a class="footer-link" href="#advantages">Про нас</a></li>
+                <li><a class="footer-link" href="#services">Послуги</a></li>
                 <li><a class="footer-link" href="catalog.html">Каталог</a></li>
-                <li>
-                  <a class="footer-link" href="home.html#reviews">Відгуки</a>
-                </li>
+                <li><a class="footer-link" href="#reviews">Відгуки</a></li>
               </ul>
             </nav>
           </div>
 
-          <address>
+          <address class="address">
             <div>
               <p class="address__title">Ми у соцмережах</p>
-              <ul class="address-icons-box">
+              <ul class="address__icons__box">
                 <li>
-                  <div class="icon-shadow">
+                  <div class="address__icons__box__icon">
                     <a href="https://www.youtube.com" target="_blank">
                       <svg class="address-icon" width="40" height="40">
                         <use href="./images/icons.svg#icon-youtube-logo"></use>
@@ -812,7 +848,7 @@
                   </div>
                 </li>
                 <li>
-                  <div class="icon-shadow">
+                  <div class="address__icons__box__icon">
                     <a href="https://www.facebook.com/" target="_blank">
                       <svg class="address-icon" width="40" height="40">
                         <use href="./images/icons.svg#icon-facebook-logo"></use>
@@ -821,7 +857,7 @@
                   </div>
                 </li>
                 <li>
-                  <div class="icon-shadow">
+                  <div class="address__icons__box__icon">
                     <a href="https://www.instagram.com/" target="_blank">
                       <svg class="address-icon" width="40" height="40">
                         <use
@@ -832,7 +868,7 @@
                   </div>
                 </li>
                 <li>
-                  <div class="icon-shadow">
+                  <div class="address__icons__box__icon">
                     <a href="https://web.telegram.org/k/" target="_blank">
                       <svg class="address-icon" width="40" height="40">
                         <use href="./images/icons.svg#icon-telegram-logo"></use>
@@ -841,7 +877,7 @@
                   </div>
                 </li>
                 <li>
-                  <div class="icon-shadow">
+                  <div class="address__icons__box__icon">
                     <a href="https://x.com/" target="_blank">
                       <svg class="address-icon" width="40" height="40">
                         <use href="./images/icons.svg#icon-twitter-logo"></use>
@@ -850,7 +886,7 @@
                   </div>
                 </li>
                 <li>
-                  <div class="icon-shadow">
+                  <div class="address__icons__box__icon">
                     <a href="https://www.viber.com/ua/" target="_blank">
                       <svg class="address-icon" width="40" height="40">
                         <use href="./images/icons.svg#icon-viber-logo"></use>
@@ -921,11 +957,11 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-button__close modal-btn-close" type="button">
-          <svg class="modal-icon" width="34" height="34">
+          <svg class="modal-button__close__icon" width="34" height="34">
             <use href="./images/icons2.svg#icon-close"></use>
           </svg>
         </button>
-        <div class="logo-modal">
+        <div class="modal__logo">
           <img
             width="126"
             height="154"
@@ -933,14 +969,18 @@
             alt="Логотип компанії"
           />
         </div>
-        <h2 class="modal-title">
+        <h2 class="modal__title">
           Наші спеціалісти зв'яжуться з Вами у зручний для Вас час!
         </h2>
         <!-- <p>Заповніть форму щоб ми могли зв'язатись з Вами</p> -->
         <form class="order-form" name="contact-form" autocomplete="on">
-          <div class="select-menu">
+          <div class="order-form__select__menu">
             <div>
-              <select class="select-window hour" name="hour" id="">
+              <select
+                class="order-form__select__menu__window order-form__select__menu__window--hour"
+                name="hour"
+                id=""
+              >
                 <option class="option" value="09">09</option>
                 <option value="10">10</option>
                 <option value="11">11</option>
@@ -954,7 +994,11 @@
             </div>
 
             <div>
-              <select class="select-window minute" name="minute" id="">
+              <select
+                class="order-form__select__menu__window order-form__select__menu__window--minute"
+                name="minute"
+                id=""
+              >
                 <option value="00">00</option>
                 <option value="15">15</option>
                 <option value="30">30</option>
@@ -963,7 +1007,11 @@
             </div>
 
             <div>
-              <select class="select-window day-week" name="day-week" id="">
+              <select
+                class="order-form__select__menu__window order-form__select__menu__window--day-week"
+                name="day-week"
+                id=""
+              >
                 <option value="Monday">Понеділок</option>
                 <option value="Tuesday">Вівторок</option>
                 <option value="Wednesday">Середа</option>
@@ -973,12 +1021,14 @@
             </div>
           </div>
 
-          <div class="form-field">
-            <label class="form-label visually-hidden" for="user-name"
+          <div class="order-form__field">
+            <label
+              class="order-form__field__label visually-hidden"
+              for="user-name"
               >Ім'я, по батькові</label
             >
             <input
-              class="form-input"
+              class="order-form__field__input"
               id="user-name"
               type="text"
               name="user-name"
@@ -987,41 +1037,41 @@
               minlength="2"
               maxlength="20"
             />
-            <svg class="modal-icon-input" width="28" height="28">
+            <svg class="order-form__field__icon__input" width="28" height="28">
               <use href="./images/icons2.svg#icon-user-name"></use>
             </svg>
           </div>
 
-          <div class="form-field">
-            <label class="form-label visually-hidden" for="tel"
+          <div class="order-form__field">
+            <label class="order-form__field__label visually-hidden" for="tel"
               >Номер телефону</label
             >
             <input
-              class="form-input"
+              class="order-form__field__input"
               id="tel"
               type="tel"
               name="user-tel"
               placeholder="Номер телефону"
               required
             />
-            <svg class="modal-icon-input" width="28" height="28">
+            <svg class="order-form__field__icon__input" width="28" height="28">
               <use href="./images/icons2.svg#icon-phone-number"></use>
             </svg>
           </div>
 
-          <div class="form-field">
-            <label class="form-label visually-hidden" for="email"
+          <div class="order-form__field">
+            <label class="order-form__field__label visually-hidden" for="email"
               >Електронна пошта</label
             >
             <input
-              class="form-input"
+              class="order-form__field__input"
               id="email"
               type="email"
               name="user-email"
               placeholder="Електронна пошта"
               required
             />
-            <svg class="modal-icon-input" width="28" height="28">
+            <svg class="order-form__field__icon__input" width="28" height="28">
               <use href="./images/icons2.svg#icon-email"></use>
             </svg>
           </div>

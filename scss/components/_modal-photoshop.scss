@@ -20,26 +20,7 @@
 }
 
 
-.modal-photoshop__close__btn {
-    padding: 5px;
-    margin: 0;
-    background-color: transparent;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    position: fixed;
-    top: 30px;
-    right: 30px;
-    background-color: none;
-    transition: box-shadow 1s;
-}
 
-.modal-photoshop__close__btn:hover {
-    box-shadow: 0 0 5px 1px var(--color-emissive),
-        inset 0 0 5px 1px var(--color-emissive);
-}
 
 .modal-photoshop-icon {
     fill: var(--color-primary-light);

@@ -1,5 +1,17 @@
 .advantages-section {
     margin-bottom: 60px;
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+
+        &__text {
+            position: relative;
+            padding: 34px 0;
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
 }
 
 
@@ -11,17 +23,7 @@ h3 {
     text-transform: uppercase;
 }
 
-.advantages-section__block {
-    display: flex;
-    justify-content: space-between;
-}
 
-.advantages-section__text {
-    position: relative;
-    padding: 34px 0;
-    font-size: 24px;
-    font-weight: 500;
-}
 
 .advantages-section__text__title {
     text-align: center;
@@ -42,7 +44,7 @@ h3 {
 }
 
 
-.advantages-section__text li {
+.advantages-section__block__text li {
     margin-bottom: 40px;
 }
 

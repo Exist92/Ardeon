@@ -16,13 +16,16 @@
         inset 0 0 9px 1px rgba(255, 255, 255, 1);
     /* inner glow */
     ;
+    transition: color 0.5s, box-shadow 0.5s, transform 1s;
     cursor: pointer;
 }
 
 .button-order:hover {
+    transform: scale(1.1);
+    color: var(--color-primary-brown);
     box-shadow:
-        0 0 30px 8px rgba(255, 255, 255, 0.5),
-        inset 0 0 30px 8px rgba(255, 255, 255, 0.5);
+        0 0 9px 1px var(--color-emissive),
+        inset 0 0 9px 1px var(--color-emissive);
 }
 
 .button-order:active {
@@ -34,22 +37,6 @@
 
 
 
-.header-nav__bar__dropdawn-button {
-    padding: 0;
-    font-family: 'Cormorant';
-    font-size: 24px;
-    font-weight: 500;
-    color: var(--color-primary-light);
-    text-transform: uppercase;
-    background-color: transparent;
-    border: none;
-}
-
-.header-nav__bar__dropdawn-button:hover {
-    color: var(--color-primary-brown);
-    cursor: pointer;
-
-}
 
 
 .reviews-arrow-button {
@@ -62,27 +49,7 @@
     margin: 0 15px;
 }
 
-.modal-button__close {
-    position: absolute;
-    background-color: transparent;
-    border: none;
-    width: 34px;
-    height: 34px;
-    right: 26px;
-    top: 26px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: box-shadow 1s linear, border 1s linear;
-}
 
-.modal-button__close:hover {
-    border: 1px solid var(--color-base-white);
-    box-shadow:
-        0 0 3px 1px var(--color-emissive),
-        inset 0 0 3px 1px var(--color-emissive);
-}
 
 
 
@@ -256,28 +223,23 @@
 }
 
 
-.buy-button {
-    color: var(--color-primary-brown);
+.modal-photoshop-close-btn {
+    padding: 5px;
+    margin: 0;
     background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: none;
+    transition: box-shadow 1s;
+}
+
+.modal-photoshop-close-btn:hover {
     box-shadow: 0 0 5px 1px var(--color-emissive),
         inset 0 0 5px 1px var(--color-emissive);
-    border: solid 1px white;
-    margin: 0 auto 10px;
-    padding: 10px 32px;
-    font-family: 'Cormorant';
-    font-size: 22px;
-    cursor: pointer;
-    transition: color 0.5s, background-color 0.5s;
-    /* border-radius: 8px; */
-}
-
-.buy-button:hover {
-    background-color: rgba(1, 1, 1, 0.3);
-    color: var(--color-base-white);
-    box-shadow: 0 0 5px 1px var(--color-base-white),
-        inset 0 0 5px 1px var(--color-base-white);
-}
-
-.buy-button:active {
-    background-color: rgba(255, 255, 255, 0.3);
 }

@@ -65,7 +65,7 @@ const galleries = {
 // Variables
 
 const modalmax = document.getElementById("backdrop-max");
-const slidesContainer = document.querySelector(".maxslides-container");
+const slidesContainer = document.querySelector(".backdrop-max__content__slides-container");
 const thumbsContainer = document.querySelector(".thumbnails");
 
 let currentIndex = 0;
@@ -153,7 +153,7 @@ function updateSingleImageMode() {
   const slides = document.querySelectorAll(".maxslides");
   const prevBtn = document.querySelector(".prev");
   const nextBtn = document.querySelector(".next");
-  const thumbsRow = document.querySelector(".row-content");
+  const thumbsRow = document.querySelector(".backdrop-max__content__row");
   const mainImage = document.querySelector(".max-images");
 
   // Если слайдов меньше двух — включаем режим одиночного изображения

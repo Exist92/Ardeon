@@ -1,4 +1,4 @@
-.footer-box {
+.footer-section {
     align-items: center;
     display: flex;
     height: 350px;
@@ -15,52 +15,114 @@
         0 5px 13px -5px var(--color-emissive),
         inset 0 0 170px 70px rgba(1, 1, 1, 0.8);
     margin-bottom: 8px;
-    /* z-index: -90; */
-}
+    
+    &__wrap {
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+        // gap: 80px;
+        align-items: center;
 
-.footer-items {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    gap: 80px;
-    align-items: center;
-}
+        &__box {
+            position: absolute;
+            width: 100%;
+            max-width: 1144px;
+            height: 276px;
+            background-color: rgba(255, 255, 255, 0.4);
+            z-index: -1;
+            box-shadow: inset 0 0 150px 3px rgba(1, 1, 1, 1);
+        }
 
-.footer-items::before {
-    content: '';
-    position: absolute;
-    top: auto;
-    left: 0;
-    background-image: url(../images/footer-Frame.svg);
-    width: 1180px;
-    height: 310px;
-    pointer-events: none;
-}
+        &__logo {
+            position: relative;
+        }
 
-.logo-footer {
-    position: relative;
-    /* color: white; */
-}
-
-.logo-footer::before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: -70px;
-    left: -50px;
-    right: -50px;
-    bottom: -50px;
-    background: radial-gradient(circle,
+        &__logo::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: -70px;
+            left: -50px;
+            right: -50px;
+            bottom: -50px;
+            background: radial-gradient(circle,
             rgba(255, 255, 255, 0.9) 0%,
             rgba(255, 255, 255, 0.15) 30%,
             rgba(255, 255, 255, 0) 62%,
             rgba(255, 255, 255, 0) 100%);
+        }
+
+    }
+
+    &__wrap::before {
+        content: '';
+        position: absolute;
+        top: auto;
+        left: 0;
+        background-image: url(../images/footer-Frame.svg);
+        width: 1180px;
+        height: 310px;
+        pointer-events: none;
+    }
+
 }
 
-address {
+
+
+
+.address {
     display: flex;
-    gap: 80px;
+    gap: 100px;
     align-items: center;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 15px;
+        color: var(--color-primary-brown);
+        font-family: 'Cormorant Infant';
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    &__icons__box {
+        justify-content: center;
+        gap: 10px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 230px;
+
+        &__icon {
+            display: flex;
+            position: relative;
+        }
+
+        &__icon::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 40px;
+            box-shadow: inset 0 0 14px 1px rgba(1, 1, 1, 0.7);
+            pointer-events: none;
+        }
+
+
+    }
+
+
+    &__text {
+        text-align: center;
+        color: var(--color-primary-brown);
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+
+    &__text li {
+        margin-bottom: 8px;
+    }
+
 }
 
 .address-icon {
@@ -73,56 +135,12 @@ address {
     box-shadow: 0 0 15px 1px var(--color-emissive);
 }
 
-.icon-shadow {
-    display: flex;
-    position: relative;
-}
 
-.icon-shadow::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 40px;
-    box-shadow: inset 0 0 14px 1px rgba(1, 1, 1, 0.7);
-    pointer-events: none;
-}
 
-.address-icons-box {
-    justify-content: center;
-    gap: 10px 40px;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 230px;
-}
 
-.address__title {
-    text-align: center;
-    margin-bottom: 15px;
-    color: var(--color-primary-brown);
-    font-family: 'Cormorant Infant';
-    font-size: 30px;
-    font-weight: 500;
-}
 
-.address__text {
-    text-align: left;
-    color: var(--color-primary-brown);
-    font-size: 18px;
-    font-weight: 500;
-}
 
-.address__text li {
-    margin-bottom: 8px;
-}
 
-.test-box {
-    position: absolute;
-    width: 100%;
-    max-width: 1144px;
-    height: 276px;
-    background-color: rgba(255, 255, 255, 0.4);
-    z-index: -1;
-    box-shadow: inset 0 0 150px 3px rgba(1, 1, 1, 1);
-}
+
+
+

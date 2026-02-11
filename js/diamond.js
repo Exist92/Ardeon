@@ -11,9 +11,9 @@
 //   });
 // });
 
-const diamond = document.querySelector('.header-nav__diamond');
-const nav = document.querySelector('.header-nav');
-const items = document.querySelectorAll('.nav-item');
+const diamond = document.querySelector('.header__nav__diamond');
+const nav = document.querySelector('.header__nav');
+const items = document.querySelectorAll('.nav__item');
 
 // Находим кнопку "Портфоліо" как стартовую позицию
 const defaultItem = items[0];

@@ -20,9 +20,9 @@
     </div>
     <!-- Preload -->
     <header>
-      <div class="container-header">
-        <div class="header-block">
-          <div class="logo-header">
+      <div class="container__header">
+        <div class="header__block">
+          <div class="header__block__logo">
             <a href="./home.html">
               <img
                 width="113"
@@ -32,31 +32,35 @@
               />
             </a>
           </div>
-          <div class="header-nav">
-            <div class="header-nav__diamond">
-              <div class="header-nav__diamond__light"></div>
+          <div class="header__nav">
+            <div class="header__nav__diamond">
+              <div class="header__nav__diamond__light"></div>
             </div>
             <nav>
-              <div class="header-nav__bar">
-                <div class="header-nav__bar__dropdawn">
-                  <button class="header-nav__bar__dropdawn-button nav-item">
+              <div class="header__nav__bar">
+                <div class="header__nav__bar__dropdawn">
+                  <button class="header__nav__bar__dropdawn__button nav__item">
                     Портфоліо
                   </button>
-                  <div class="header-nav__bar__dropdawn-content">
-                    <a class="header-link__dropdawn" href="./3dsmax.html"
+                  <div class="header__nav__bar__dropdawn__content">
+                    <a class="header__link__dropdawn" href="./3dsmax.html"
                       >Зds max</a
                     >
-                    <a class="header-link__dropdawn" href="./photoshop.html"
+                    <a class="header__link__dropdawn" href="./photoshop.html"
                       >photoshop</a
                     >
                   </div>
                 </div>
-                <a class="header-link nav-item" href="#services">Послуги</a>
-                <a class="header-link nav-item" href="catalog.html">Каталог</a>
-                <a class="header-link nav-item" href="./home.html#reviews"
+                <a class="header__link nav__item" href="./home.html#services"
+                  >Послуги</a
+                >
+                <a class="header__link nav__item" href="catalog.html"
+                  >Каталог</a
+                >
+                <a class="header__link nav__item" href="./home.html#reviews"
                   >Відгуки</a
                 >
-                <a class="header-link nav-item" href="#contact">Контакти</a>
+                <a class="header__link nav__item" href="#contact">Контакти</a>
               </div>
             </nav>
           </div>
@@ -71,8 +75,8 @@
     <main>
       <section class="hero-section">
         <div class="container">
-          <div class="hero-light"></div>
-          <div class="hero-text-overflow">
+          <div class="hero-section__light"></div>
+          <div class="hero-section__text__overflow">
             <h1 class="hero-section__title">
               Естетика, що відчувається з першого погляду
             </h1>
@@ -88,7 +92,7 @@
         <div class="container">
           <div class="advantages-section__block">
             <h2 class="visually-hidden">Про компанію, переваги</h2>
-            <div class="advantages-section__text frame">
+            <div class="advantages-section__block__text frame">
               <h3>Про компанію</h3>
               <p>
                 <span lang="en">Ardeon</span> — це студія дизайну,
@@ -109,7 +113,7 @@
                 завершеності.
               </p>
             </div>
-            <div class="advantages-section__text">
+            <div class="advantages-section__block__text">
               <h3 class="advantages-section__text__title list">
                 Наші переваги
               </h3>
@@ -153,16 +157,16 @@
       <section class="services-section" id="services">
         <div class="container">
           <div class="services-section__decor">
-            <div class="services-section__romb"></div>
-            <h2 class="services-section__title">Наші послуги</h2>
-            <div class="services-section__romb"></div>
+            <div class="services-section__decor__romb"></div>
+            <h2 class="services-section__decor__title">Наші послуги</h2>
+            <div class="services-section__decor__romb"></div>
           </div>
-          <div class="services-section__top-part">
-            <div class="services-section__deer video-block">
+          <div class="services-section__top__part">
+            <div class="services-section__top__part__deer video-block">
               <video muted loop>
                 <source src="./media/deer.mp4" />
               </video>
-              <div class="services-section__deer__text">
+              <div class="services-section__top__part__deer__text">
                 <h3>Графічний дизайн</h3>
                 <h4>Візуальна ідентичність і комунікація</h4>
                 <p>
@@ -172,11 +176,11 @@
                 </p>
               </div>
             </div>
-            <div class="services-section__computer video-block">
+            <div class="services-section__top__part__computer video-block">
               <video muted loop>
                 <source src="./media/computer.mp4" />
               </video>
-              <div class="services-section__computer__text">
+              <div class="services-section__top__part__computer__text">
                 <h3>Професійна постобробка зображень</h3>
                 <p>
                   Корекція кольору, світла, ретуш та стилізація фотографій для
@@ -185,12 +189,12 @@
               </div>
             </div>
           </div>
-          <div class="services-section__top-part">
-            <div class="services-section__blueprint video-block">
+          <div class="services-section__top__part">
+            <div class="services-section__top__part__blueprint video-block">
               <video muted loop>
                 <source src="./media/blueprints.mp4" />
               </video>
-              <div class="services-section__blueprint__text">
+              <div class="services-section__top__part__blueprint__text">
                 <h3>Дизайн-проекти</h3>
                 <h4>Інтер’єрні та архітектурні рішення</h4>
                 <p>
@@ -200,11 +204,11 @@
                 </p>
               </div>
             </div>
-            <div class="services-section__interior video-block">
+            <div class="services-section__top__part__interior video-block">
               <video muted loop>
                 <source src="./media/interior.mp4" />
               </video>
-              <div class="services-section__interior__text">
+              <div class="services-section__top__part__interior__text">
                 <h3>3D візуалізація</h3>
                 <h4>Фотореалістичні зображення</h4>
                 <p>
@@ -216,11 +220,11 @@
             </div>
           </div>
           <div class="services-section__bottom-part">
-            <div class="services-section__woodwork video-block">
+            <div class="services-section__bottom-part__woodwork video-block">
               <video muted loop>
                 <source src="./media/woodwork.mp4" />
               </video>
-              <div class="services-section__woodwork__text">
+              <div class="services-section__bottom-part__woodwork__text">
                 <h3>Меблі власного виробництва</h3>
                 <h4>Продаж та виготовлення меблів</h4>
                 <p>
@@ -236,55 +240,55 @@
       <section class="reviews-section" id="reviews">
         <div class="container">
           <div class="reviews-section__decor">
-            <div class="reviews-section__romb"></div>
-            <h2 class="reviews-section__title">Відгуки клієнтів</h2>
-            <div class="services-section__romb"></div>
+            <div class="reviews-section__decor__romb"></div>
+            <h2 class="reviews-section__decor__title">Відгуки клієнтів</h2>
+            <div class="reviews-section__decor__romb"></div>
           </div>
-          <div class="reviews-container">
+          <div class="reviews-section__container">
             <button class="reviews-arrow-button" type="button">
               <svg class="reviews-arrow-ico" width="56" height="94">
                 <use href="./images/icons.svg#icon-left-arrow"></use>
               </svg>
             </button>
-            <ul class="reviews-list">
+            <ul class="reviews-section__container__list">
               <li>
-                <article class="reviews-card Natalia">
+                <article class="reviews-card reviews-card--Natalia">
                   <h3>Наталаія</h3>
                   <p>Проєкт був реалізований чітко й без зайвих правок</p>
                   <div class="reviews-card__stars">
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
+                    <div class="reviews-card__stars__star"></div>
+                    <div class="reviews-card__stars__star"></div>
+                    <div class="reviews-card__stars__star"></div>
+                    <div class="reviews-card__stars__star"></div>
+                    <div class="reviews-card__stars__star"></div>
                   </div>
                 </article>
               </li>
               <li>
-                <article class="reviews-card Oleksandr">
+                <article class="reviews-card reviews-card--Oleksandr">
                   <h3>Олександр</h3>
                   <p>Професійний підхід і високий рівень графіки</p>
                   <div class="reviews-card__stars">
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star white"></div>
+                    <div class="reviews-card__stars__star"></div>
+                    <div class="reviews-card__stars__star"></div>
+                    <div class="reviews-card__stars__star"></div>
+                    <div class="reviews-card__stars__star"></div>
+                    <div class="reviews-card__stars__star white"></div>
                   </div>
                 </article>
               </li>
               <li>
-                <article class="reviews-card Irina">
+                <article class="reviews-card reviews-card--Irina">
                   <h3>Ірина</h3>
                   <p>
                     Сподобалась робота з деталями та загальна атмосфера проєкту
                   </p>
                   <div class="reviews-card__stars">
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
+                    <div class="reviews-card__stars__star"></div>
+                    <div class="reviews-card__stars__star"></div>
+                    <div class="reviews-card__stars__star"></div>
+                    <div class="reviews-card__stars__star"></div>
+                    <div class="reviews-card__stars__star"></div>
                   </div>
                 </article>
               </li>
@@ -299,11 +303,11 @@
       </section>
     </main>
     <!-- Футер -->
-    <footer class="footer-box" id="contact">
+    <footer class="footer-section" id="contact">
       <div class="container">
-        <div class="footer-items">
-          <div class="test-box"></div>
-          <div class="logo-footer">
+        <div class="footer-section__wrap">
+          <div class="footer-section__wrap__box"></div>
+          <div class="footer-section__wrap__logo">
             <a href="./home.html">
               <img
                 width="153"
@@ -324,12 +328,12 @@
             </nav>
           </div>
 
-          <address>
+          <address class="address">
             <div>
               <p class="address__title">Ми у соцмережах</p>
-              <ul class="address-icons-box">
+              <ul class="address__icons__box">
                 <li>
-                  <div class="icon-shadow">
+                  <div class="address__icons__box__icon">
                     <a href="https://www.youtube.com" target="_blank">
                       <svg class="address-icon" width="40" height="40">
                         <use href="./images/icons.svg#icon-youtube-logo"></use>
@@ -338,7 +342,7 @@
                   </div>
                 </li>
                 <li>
-                  <div class="icon-shadow">
+                  <div class="address__icons__box__icon">
                     <a href="https://www.facebook.com/" target="_blank">
                       <svg class="address-icon" width="40" height="40">
                         <use href="./images/icons.svg#icon-facebook-logo"></use>
@@ -347,7 +351,7 @@
                   </div>
                 </li>
                 <li>
-                  <div class="icon-shadow">
+                  <div class="address__icons__box__icon">
                     <a href="https://www.instagram.com/" target="_blank">
                       <svg class="address-icon" width="40" height="40">
                         <use
@@ -358,7 +362,7 @@
                   </div>
                 </li>
                 <li>
-                  <div class="icon-shadow">
+                  <div class="address__icons__box__icon">
                     <a href="https://web.telegram.org/k/" target="_blank">
                       <svg class="address-icon" width="40" height="40">
                         <use href="./images/icons.svg#icon-telegram-logo"></use>
@@ -367,7 +371,7 @@
                   </div>
                 </li>
                 <li>
-                  <div class="icon-shadow">
+                  <div class="address__icons__box__icon">
                     <a href="https://x.com/" target="_blank">
                       <svg class="address-icon" width="40" height="40">
                         <use href="./images/icons.svg#icon-twitter-logo"></use>
@@ -376,7 +380,7 @@
                   </div>
                 </li>
                 <li>
-                  <div class="icon-shadow">
+                  <div class="address__icons__box__icon">
                     <a href="https://www.viber.com/ua/" target="_blank">
                       <svg class="address-icon" width="40" height="40">
                         <use href="./images/icons.svg#icon-viber-logo"></use>
@@ -447,11 +451,11 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-button__close modal-btn-close" type="button">
-          <svg class="modal-icon" width="34" height="34">
+          <svg class="modal-button__close__icon" width="34" height="34">
             <use href="./images/icons2.svg#icon-close"></use>
           </svg>
         </button>
-        <div class="logo-modal">
+        <div class="modal__logo">
           <img
             width="126"
             height="154"
@@ -459,14 +463,18 @@
             alt="Логотип компанії"
           />
         </div>
-        <h2 class="modal-title">
+        <h2 class="modal__title">
           Наші спеціалісти зв'яжуться з Вами у зручний для Вас час!
         </h2>
         <!-- <p>Заповніть форму щоб ми могли зв'язатись з Вами</p> -->
         <form class="order-form" name="contact-form" autocomplete="on">
-          <div class="select-menu">
+          <div class="order-form__select__menu">
             <div>
-              <select class="select-window hour" name="hour" id="">
+              <select
+                class="order-form__select__menu__window order-form__select__menu__window--hour"
+                name="hour"
+                id=""
+              >
                 <option class="option" value="09">09</option>
                 <option value="10">10</option>
                 <option value="11">11</option>
@@ -480,7 +488,11 @@
             </div>
 
             <div>
-              <select class="select-window minute" name="minute" id="">
+              <select
+                class="order-form__select__menu__window order-form__select__menu__window--minute"
+                name="minute"
+                id=""
+              >
                 <option value="00">00</option>
                 <option value="15">15</option>
                 <option value="30">30</option>
@@ -489,7 +501,11 @@
             </div>
 
             <div>
-              <select class="select-window day-week" name="day-week" id="">
+              <select
+                class="order-form__select__menu__window order-form__select__menu__window--day-week"
+                name="day-week"
+                id=""
+              >
                 <option value="Monday">Понеділок</option>
                 <option value="Tuesday">Вівторок</option>
                 <option value="Wednesday">Середа</option>
@@ -499,12 +515,14 @@
             </div>
           </div>
 
-          <div class="form-field">
-            <label class="form-label visually-hidden" for="user-name"
+          <div class="order-form__field">
+            <label
+              class="order-form__field__label visually-hidden"
+              for="user-name"
               >Ім'я, по батькові</label
             >
             <input
-              class="form-input"
+              class="order-form__field__input"
               id="user-name"
               type="text"
               name="user-name"
@@ -513,41 +531,41 @@
               minlength="2"
               maxlength="20"
             />
-            <svg class="modal-icon-input" width="28" height="28">
+            <svg class="order-form__field__icon__input" width="28" height="28">
               <use href="./images/icons2.svg#icon-user-name"></use>
             </svg>
           </div>
 
-          <div class="form-field">
-            <label class="form-label visually-hidden" for="tel"
+          <div class="order-form__field">
+            <label class="order-form__field__label visually-hidden" for="tel"
               >Номер телефону</label
             >
             <input
-              class="form-input"
+              class="order-form__field__input"
               id="tel"
               type="tel"
               name="user-tel"
               placeholder="Номер телефону"
               required
             />
-            <svg class="modal-icon-input" width="28" height="28">
+            <svg class="order-form__field__icon__input" width="28" height="28">
               <use href="./images/icons2.svg#icon-phone-number"></use>
             </svg>
           </div>
 
-          <div class="form-field">
-            <label class="form-label visually-hidden" for="email"
+          <div class="order-form__field">
+            <label class="order-form__field__label visually-hidden" for="email"
               >Електронна пошта</label
             >
             <input
-              class="form-input"
+              class="order-form__field__input"
               id="email"
               type="email"
               name="user-email"
               placeholder="Електронна пошта"
               required
             />
-            <svg class="modal-icon-input" width="28" height="28">
+            <svg class="order-form__field__icon__input" width="28" height="28">
               <use href="./images/icons2.svg#icon-email"></use>
             </svg>
           </div>

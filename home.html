@@ -11,8 +11,7 @@
     <div class="preloader">
       <div class="preloader__logo">
         <img
-          width="425"
-          height="269"
+          class="preloader__logo__home"
           src="./images/Ardeon-main.png"
           alt="Логотип компанії"
         />
@@ -24,14 +23,10 @@
         <div class="header__block">
           <div class="header__block__logo">
             <a href="./home.html">
-              <img
-                width="113"
-                height="136"
-                src="./images/logo-small.svg"
-                alt="Логотип компанії"
-              />
+              <img src="./images/logo-small.svg" alt="Логотип компанії" />
             </a>
           </div>
+          <div class="header__block__text">Ardeon</div>
           <div class="header__nav">
             <div class="header__nav__diamond">
               <div class="header__nav__diamond__light"></div>
@@ -65,9 +60,70 @@
             </nav>
           </div>
           <div>
-            <button class="button-order modal-btn-open" type="button">
+            <button
+              class="header__block__button button-order modal-btn-open"
+              type="button"
+            >
               Замовити
             </button>
+            <button
+              class="header__block__burger-button menu-btn-open"
+              type="button"
+            >
+              <svg
+                class="header__block__burger-button-icon"
+                width="32"
+                height="32"
+              >
+                <use href="./images/icons2.svg#icon-Menu"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="mobile-menu">
+            <div>
+              <img
+                class="mobile-menu__flower"
+                src="./images/mobile-menu-flower-left.png"
+                alt="Flower"
+              />
+            </div>
+            <div class="mobile-menu__frame">
+              <div class="mobile-menu__frame__flower">
+                <svg class="mobile-menu__frame__flower__icon">
+                  <use href="./images/icons2.svg#icon-flowr-menu"></use>
+                </svg>
+              </div>
+              <button class="menu-btn-close" type="button">
+                <svg class="modal-photoshop-icon">
+                  <use href="./images/icons2.svg#icon-close"></use>
+                </svg>
+              </button>
+              <div class="mobile-menu__frame__items">
+                <p class="header__link">Портфоліо</p>
+              </div>
+              <div
+                class="mobile-menu__frame__items mobile-menu__frame__items--sub-menu"
+              >
+                <a class="header__link" href="./3dsmax.html">Зds max</a>
+              </div>
+              <div
+                class="mobile-menu__frame__items mobile-menu__frame__items--sub-menu"
+              >
+                <a class="header__link" href="./photoshop.html">photoshop</a>
+              </div>
+              <div class="mobile-menu__frame__items">
+                <a class="header__link" href="./home.html#services">Послуги</a>
+              </div>
+              <div class="mobile-menu__frame__items">
+                <a class="header__link" href="catalog.html">Каталог</a>
+              </div>
+              <div class="mobile-menu__frame__items">
+                <a class="header__link" href="./home.html#reviews">Відгуки</a>
+              </div>
+              <div class="mobile-menu__frame__items">
+                <a class="header__link" href="#contact">Контакти</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -88,7 +144,7 @@
           </div>
         </div>
       </section>
-      <section class="advantages-section" id="advantages">
+      <!-- <section class="advantages-section" id="advantages">
         <div class="container">
           <div class="advantages-section__block">
             <h2 class="visually-hidden">Про компанію, переваги</h2>
@@ -153,8 +209,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="services-section" id="services">
+      </section> -->
+      <!-- <section class="services-section" id="services">
         <div class="container">
           <div class="services-section__decor">
             <div class="services-section__decor__romb"></div>
@@ -236,8 +292,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="reviews-section" id="reviews">
+      </section> -->
+      <!-- <section class="reviews-section" id="reviews">
         <div class="container">
           <div class="reviews-section__decor">
             <div class="reviews-section__decor__romb"></div>
@@ -300,10 +356,10 @@
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- Футер -->
-    <footer class="footer-section" id="contact">
+    <!-- <footer class="footer-section" id="contact">
       <div class="container">
         <div class="footer-section__wrap">
           <div class="footer-section__wrap__box"></div>
@@ -435,7 +491,7 @@
           </address>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <button
       class="button-to-top"
@@ -577,6 +633,7 @@
       </div>
     </div>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/button-to-top.js"></script>
     <script src="./js/diamond.js"></script>
     <script src="./js/modal.js"></script>

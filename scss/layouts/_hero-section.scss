@@ -23,13 +23,13 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background-image: url(../images/hero-section-background-lights.png);
+        background-image: url(../images/hero-section-background-ambient.jpg);
         background-repeat: no-repeat;
         background-position: center 0;
         background-size: cover;
         pointer-events: none;
         animation-name: hero-lighting;
-        animation-duration: 6s;
+        animation-duration: 10s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
@@ -49,6 +49,8 @@
     }
 
     &__text__overflow {
+        position: relative;
+        z-index: 1;
         background-color: rgba(1, 1, 1, 0.4);
         max-width: 560px;
         padding: 20px;

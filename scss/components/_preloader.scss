@@ -1,3 +1,5 @@
+@use '../utils/' as *;
+
 .preloader {
     position: fixed;
     inset: 0;
@@ -17,7 +19,23 @@
         animation-timing-function: ease-out;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
+
+        &__home {
+            width: 425px;
+            height: 269px;
+
+            @media screen and (max-width: $bp-tablet) {
+                width: 350px;
+                height: 222px;
+            }
+
+            @media screen and (max-width: $bp-mobile) {
+                width: 300px;
+                height: 190px;     
+            }
+        }
     }
+
 }
 
 @keyframes preloader-apear {

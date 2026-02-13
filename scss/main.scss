@@ -1,11 +1,9 @@
 
 @use './base';
 
-@use './utils/variables';
+@use 'utils';
 
-@use './utils/fonts';
-
-@use './utils/utils';
+@use './layouts/mobile-menu';
 
 @use './components/buttons';
 
@@ -45,7 +43,7 @@
 
 @use './layouts/catalog-product-section';
 
-@use './utils/mixin';
+
 
 
 

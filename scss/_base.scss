@@ -39,6 +39,12 @@ body {
     /* font-size: ; */
 }
 
+.is-scroll-disabled {
+    overflow: hidden;
+    height: 100vh;
+    /* желательно */
+}
+
 
 address {
     font-style: normal;

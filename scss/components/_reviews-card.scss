@@ -1,10 +1,39 @@
+@use '../utils/' as *;
+
 .reviews-card {
     position: relative;
     border: 1px solid var(--color-primary-brown);
-    padding: 380px 30px 54px 30px;
-    width: 344px;
-    height: 544px;
+    padding: 370px 15px 10px 15px;
+    width: 300px;
+    height: 474px;
     text-align: center;
+
+    @media screen and (max-width: $bp-mobile) {
+        width: 225px;
+        height: 356px;
+        padding: 260px 5px 5px 5px;
+    }
+
+
+    // @media screen and (max-width: $bp-mobile) {
+    //         transform: scale(0.9);
+    // }
+
+    & p {
+        font-size: 21px;
+
+        @media screen and (max-width: $bp-mobile) {
+            font-size: 17px;
+        }
+    }
+
+    & h3 {
+        font-size: 24px;
+
+        @media screen and (max-width: $bp-mobile) {
+            font-size: 20px;
+        }
+    }
 
 
     &--Natalia {
@@ -31,13 +60,27 @@
         overflow: hidden;
     }
 
+    &--Vlad {
+        z-index: -2;
+        background-image: url(../images/Vlad.jpg);
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
 
     &__stars {
         position: absolute;
         display: flex;
         gap: 32px;
-        bottom: 28px;
-        left: 60px;
+        bottom: 120px;
+        left: 50px;
+
+        @media screen and (max-width: $bp-mobile) {
+            gap: 22px;
+            bottom: 100px;
+            left: 43px;
+        }
 
         &__star {
             width: 18px;
@@ -47,6 +90,11 @@
                 inset 0 0 15px 1px rgba(1, 1, 1, 0.2),
                 0 0 15px 1px var(--color-emissive);
             transform: rotate(-45deg);
+
+            @media screen and (max-width: $bp-mobile) {
+                width: 10px;
+                height: 10px;
+            }
         }
 
         &__star.white {
@@ -71,6 +119,8 @@
     height: 35%;
 
 }
+
+
 
 
 

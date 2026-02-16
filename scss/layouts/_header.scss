@@ -30,6 +30,7 @@
             color: var(--color-primary-light);
             text-transform: uppercase;
             font-size: 35px;
+            margin-right: 35px;
         }
     
         @media screen and (max-width: $bp-mobile) {
@@ -37,6 +38,7 @@
             color: var(--color-primary-light);
             text-transform: uppercase;
             font-size: 28px;
+            margin-right: 20px;
         }
     }
 

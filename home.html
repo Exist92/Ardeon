@@ -99,7 +99,7 @@
                 </svg>
               </button>
               <div class="mobile-menu__frame__items">
-                <p class="header__link">Портфоліо</p>
+                <p class="header__link">Портфоліо :</p>
               </div>
               <div
                 class="mobile-menu__frame__items mobile-menu__frame__items--sub-menu"
@@ -132,6 +132,12 @@
       <section class="hero-section">
         <div class="container">
           <div class="hero-section__light"></div>
+          <button
+            class="hero-section-order-btn header__block__button button-order modal-btn-open"
+            type="button"
+          >
+            Замовити
+          </button>
           <div class="hero-section__text__overflow">
             <h1 class="hero-section__title">
               Естетика, що відчувається з першого погляду
@@ -144,7 +150,7 @@
           </div>
         </div>
       </section>
-      <!-- <section class="advantages-section" id="advantages">
+      <section class="advantages-section" id="advantages">
         <div class="container">
           <div class="advantages-section__block">
             <h2 class="visually-hidden">Про компанію, переваги</h2>
@@ -157,29 +163,37 @@
                 архітектурного мислення та сучасних технологій, перетворюючи
                 ідеї на чітко продумані й візуально переконливі результати.
               </p>
-              <p>
-                Ми працюємо з інтер’єрами, архітектурною візуалізацією,
-                графічним дизайном та постобробкою зображень, створюючи єдиний
-                стиль і впізнавану візуальну мову проєкту.
-              </p>
-              <p>
-                Наша мета — створювати інтер’єри та візуальні образи, які не
-                просто виглядають ефектно, а працюють на людину, бізнес і
-                середовище, залишаючи сильне емоційне враження та відчуття
-                завершеності.
-              </p>
+              <div class="advantages-section__block__text__hidden">
+                <p>
+                  Ми працюємо з інтер’єрами, архітектурною візуалізацією,
+                  графічним дизайном та постобробкою зображень, створюючи єдиний
+                  стиль і впізнавану візуальну мову проєкту.
+                </p>
+                <p>
+                  Наша мета — створювати інтер’єри та візуальні образи, які не
+                  просто виглядають ефектно, а працюють на людину, бізнес і
+                  середовище, залишаючи сильне емоційне враження та відчуття
+                  завершеності.
+                </p>
+              </div>
+              <button
+                class="advantages-section__block__text__readmore-btn read-more-btn"
+                type="button"
+              >
+                Читати повністю
+              </button>
             </div>
             <div class="advantages-section__block__text">
               <h3 class="advantages-section__text__title list">
                 Наші переваги
               </h3>
               <div class="advantages-section__text__icon">
-                <svg width="38" height="40">
+                <svg class="advantages-section__icon__size">
                   <use href="./images/icons2.svg#icon-title"></use>
                 </svg>
               </div>
               <div class="advantages-section__text__icon-right">
-                <svg width="38" height="40">
+                <svg class="advantages-section__icon__size">
                   <use href="./images/icons2.svg#icon-title"></use>
                 </svg>
               </div>
@@ -209,13 +223,44 @@
             </div>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="services-section" id="services">
-        <div class="container">
+      </section>
+      <section class="services-section" id="services">
+        <div class="container-services-section">
           <div class="services-section__decor">
             <div class="services-section__decor__romb"></div>
             <h2 class="services-section__decor__title">Наші послуги</h2>
             <div class="services-section__decor__romb"></div>
+          </div>
+          <div class="services-section__smallscreen">
+            <div
+              class="services-section__smallscreen__background services-section__smallscreen__background--1"
+            >
+              <h3>Графічний дизайн</h3>
+              <h4>Візуальна ідентичність і комунікація</h4>
+            </div>
+            <div
+              class="services-section__smallscreen__background services-section__smallscreen__background--2"
+            >
+              <h3>Професійна постобробка зображень</h3>
+            </div>
+            <div
+              class="services-section__smallscreen__background services-section__smallscreen__background--3"
+            >
+              <h3>Дизайн-проекти</h3>
+              <h4>Інтер’єрні та архітектурні рішення</h4>
+            </div>
+            <div
+              class="services-section__smallscreen__background services-section__smallscreen__background--4"
+            >
+              <h3>3D візуалізація</h3>
+              <h4>Фотореалістичні зображення</h4>
+            </div>
+            <div
+              class="services-section__smallscreen__background services-section__smallscreen__background--5"
+            >
+              <h3>Меблі власного виробництва</h3>
+              <h4>Продаж та виготовлення меблів</h4>
+            </div>
           </div>
           <div class="services-section__top__part">
             <div class="services-section__top__part__deer video-block">
@@ -292,74 +337,101 @@
             </div>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="reviews-section" id="reviews">
+      </section>
+      <section class="reviews-section" id="reviews">
         <div class="container">
           <div class="reviews-section__decor">
             <div class="reviews-section__decor__romb"></div>
             <h2 class="reviews-section__decor__title">Відгуки клієнтів</h2>
             <div class="reviews-section__decor__romb"></div>
           </div>
-          <div class="reviews-section__container">
-            <button class="reviews-arrow-button" type="button">
-              <svg class="reviews-arrow-ico" width="56" height="94">
-                <use href="./images/icons.svg#icon-left-arrow"></use>
-              </svg>
-            </button>
-            <ul class="reviews-section__container__list">
-              <li>
-                <article class="reviews-card reviews-card--Natalia">
-                  <h3>Наталаія</h3>
-                  <p>Проєкт був реалізований чітко й без зайвих правок</p>
-                  <div class="reviews-card__stars">
-                    <div class="reviews-card__stars__star"></div>
-                    <div class="reviews-card__stars__star"></div>
-                    <div class="reviews-card__stars__star"></div>
-                    <div class="reviews-card__stars__star"></div>
-                    <div class="reviews-card__stars__star"></div>
-                  </div>
-                </article>
-              </li>
-              <li>
-                <article class="reviews-card reviews-card--Oleksandr">
-                  <h3>Олександр</h3>
-                  <p>Професійний підхід і високий рівень графіки</p>
-                  <div class="reviews-card__stars">
-                    <div class="reviews-card__stars__star"></div>
-                    <div class="reviews-card__stars__star"></div>
-                    <div class="reviews-card__stars__star"></div>
-                    <div class="reviews-card__stars__star"></div>
-                    <div class="reviews-card__stars__star white"></div>
-                  </div>
-                </article>
-              </li>
-              <li>
-                <article class="reviews-card reviews-card--Irina">
-                  <h3>Ірина</h3>
-                  <p>
-                    Сподобалась робота з деталями та загальна атмосфера проєкту
-                  </p>
-                  <div class="reviews-card__stars">
-                    <div class="reviews-card__stars__star"></div>
-                    <div class="reviews-card__stars__star"></div>
-                    <div class="reviews-card__stars__star"></div>
-                    <div class="reviews-card__stars__star"></div>
-                    <div class="reviews-card__stars__star"></div>
-                  </div>
-                </article>
-              </li>
-            </ul>
-            <button class="reviews-arrow-button" type="button">
-              <svg class="reviews-arrow-ico" width="56" height="94">
-                <use href="./images/icons.svg#icon-right-arrow"></use>
-              </svg>
-            </button>
+          <div class="reviews-section__container__slider">
+            <div>
+              <button
+                class="reviews-arrow-button reviews-arrow-button--prev"
+                type="button"
+              >
+                <svg class="reviews-arrow-ico" width="56" height="94">
+                  <use href="./images/icons.svg#icon-left-arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="reviews-slider-viewport">
+              <div class="reviews-slider-track">
+                <div class="reviews-slide">
+                  <article class="reviews-card reviews-card--Natalia">
+                    <h3>Наталаія</h3>
+                    <p>Проєкт був реалізований чітко й без зайвих правок</p>
+                    <div class="reviews-card__stars">
+                      <div class="reviews-card__stars__star"></div>
+                      <div class="reviews-card__stars__star"></div>
+                      <div class="reviews-card__stars__star"></div>
+                      <div class="reviews-card__stars__star"></div>
+                      <div class="reviews-card__stars__star"></div>
+                    </div>
+                  </article>
+                </div>
+                <div class="reviews-slide">
+                  <article class="reviews-card reviews-card--Oleksandr">
+                    <h3>Олександр</h3>
+                    <p>Професійний підхід і високий рівень графіки</p>
+                    <div class="reviews-card__stars">
+                      <div class="reviews-card__stars__star"></div>
+                      <div class="reviews-card__stars__star"></div>
+                      <div class="reviews-card__stars__star"></div>
+                      <div class="reviews-card__stars__star"></div>
+                      <div class="reviews-card__stars__star white"></div>
+                    </div>
+                  </article>
+                </div>
+                <div class="reviews-slide">
+                  <article class="reviews-card reviews-card--Irina">
+                    <h3>Ірина</h3>
+                    <p>
+                      Сподобалась робота з деталями та загальна атмосфера
+                      проєкту
+                    </p>
+                    <div class="reviews-card__stars">
+                      <div class="reviews-card__stars__star"></div>
+                      <div class="reviews-card__stars__star"></div>
+                      <div class="reviews-card__stars__star"></div>
+                      <div class="reviews-card__stars__star"></div>
+                      <div class="reviews-card__stars__star"></div>
+                    </div>
+                  </article>
+                </div>
+                <div class="reviews-slide">
+                  <article class="reviews-card reviews-card--Vlad">
+                    <h3>Владислав</h3>
+                    <p>Проект виконано дуже якісно в короткі терміни</p>
+                    <div class="reviews-card__stars">
+                      <div class="reviews-card__stars__star"></div>
+                      <div class="reviews-card__stars__star"></div>
+                      <div class="reviews-card__stars__star"></div>
+                      <div class="reviews-card__stars__star"></div>
+                      <div class="reviews-card__stars__star"></div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button
+                class="reviews-arrow-button reviews-arrow-button-next"
+                type="button"
+              >
+                <svg class="reviews-arrow-ico" width="56" height="94">
+                  <use href="./images/icons.svg#icon-right-arrow"></use>
+                </svg>
+              </button>
+            </div>
           </div>
+          <div class="reviews-pagination"></div>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Футер -->
-    <!-- <footer class="footer-section" id="contact">
+    <footer class="footer-section" id="contact">
       <div class="container">
         <div class="footer-section__wrap">
           <div class="footer-section__wrap__box"></div>
@@ -373,7 +445,7 @@
               />
             </a>
           </div>
-          <div>
+          <div class="footer-section__wrap__nav">
             <nav>
               <ul>
                 <li><a class="footer-link" href="#advantages">Про нас</a></li>
@@ -491,7 +563,7 @@
           </address>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <button
       class="button-to-top"
@@ -512,12 +584,7 @@
           </svg>
         </button>
         <div class="modal__logo">
-          <img
-            width="126"
-            height="154"
-            src="./images/logo-small.svg"
-            alt="Логотип компанії"
-          />
+          <img src="./images/logo-small.svg" alt="Логотип компанії" />
         </div>
         <h2 class="modal__title">
           Наші спеціалісти зв'яжуться з Вами у зручний для Вас час!
@@ -633,6 +700,8 @@
       </div>
     </div>
 
+    <script src="./js/reviews-slider.js"></script>
+    <script src="./js/read-more-btn.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/button-to-top.js"></script>
     <script src="./js/diamond.js"></script>

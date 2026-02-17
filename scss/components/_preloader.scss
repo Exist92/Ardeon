@@ -34,6 +34,36 @@
                 height: 190px;     
             }
         }
+
+        &__catalog {
+            width: 350px;
+            height: 334px;
+
+            @media screen and (max-width: $bp-tablet) {
+                    width: 250px;
+                    height: 239px;
+                }
+            
+            @media screen and (max-width: $bp-mobile) {
+                width: 250px;
+                height: 239px;
+            }
+        }
+
+        &__3dmax {
+            width: 500px;
+            height: 165px;
+
+            @media screen and (max-width: $bp-tablet) {
+                    width: 350px;
+                    height: 116px;
+                }
+            
+            @media screen and (max-width: $bp-mobile) {
+                width: 300px;
+                height: 100px;
+            }
+        }
     }
 
 }

@@ -68,7 +68,7 @@
 .prev,
 .next {
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     top: 40%;
     padding: 16px;
     margin-top: -50px;
@@ -79,14 +79,34 @@
     border: 1px solid rgba(1, 1, 1, 0.9);
     transition: border 1s, box-shadow 1s;
     transform: translateY(-50%);
+
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
 }
 
 .next {
-    right: -100px;
+    right: 100px;
+
+    @media screen and (max-width: 1200px) {
+        right: 50px;
+    }
+
+    @media screen and (max-width: 1096px) {
+        right: 10px;
+    }
 }
 
 .prev {
-    left: -100px;
+    left: 100px;
+
+    @media screen and (max-width: 1200px) {
+        left: 50px;
+    }
+
+    @media screen and (max-width: 1096px) {
+        left: 10px;
+    }
 }
 
 .prev:hover,

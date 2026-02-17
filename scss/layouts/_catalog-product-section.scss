@@ -1,3 +1,5 @@
+@use '../utils/' as *;
+
 .product-section__wrap {
     display: flex;
     justify-content: center;
@@ -114,6 +116,11 @@
         font-size: 25px;
         padding: 8px 16px;
         font-family: 'Cormorant Infant';
+
+        @media screen and (max-width: $bp-mobile) {
+                font-size: 20px;
+                padding: 4px 8px;
+            }
     }
 
     &__link:hover:not(&__active) {

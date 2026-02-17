@@ -11,8 +11,7 @@
     <div class="preloader">
       <div class="preloader__logo">
         <img
-          width="500"
-          height="165"
+          class="preloader__logo__3dmax"
           src="./images/3ds-max.png"
           alt="Фотошоп"
         />
@@ -24,14 +23,10 @@
         <div class="header__block">
           <div class="header__block__logo">
             <a href="./home.html">
-              <img
-                width="113"
-                height="136"
-                src="./images/logo-small.svg"
-                alt="Логотип компанії"
-              />
+              <img src="./images/logo-small.svg" alt="Логотип компанії" />
             </a>
           </div>
+          <div class="header__block__text">Ardeon</div>
           <div class="header__nav">
             <div class="header__nav__diamond">
               <div class="header__nav__diamond__light"></div>
@@ -65,9 +60,70 @@
             </nav>
           </div>
           <div>
-            <button class="button-order modal-btn-open" type="button">
+            <button
+              class="header__block__button button-order modal-btn-open"
+              type="button"
+            >
               Замовити
             </button>
+            <button
+              class="header__block__burger-button menu-btn-open"
+              type="button"
+            >
+              <svg
+                class="header__block__burger-button-icon"
+                width="32"
+                height="32"
+              >
+                <use href="./images/icons2.svg#icon-Menu"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="mobile-menu">
+            <div>
+              <img
+                class="mobile-menu__flower"
+                src="./images/mobile-menu-flower-left.png"
+                alt="Flower"
+              />
+            </div>
+            <div class="mobile-menu__frame">
+              <div class="mobile-menu__frame__flower">
+                <svg class="mobile-menu__frame__flower__icon">
+                  <use href="./images/icons2.svg#icon-flowr-menu"></use>
+                </svg>
+              </div>
+              <button class="menu-btn-close" type="button">
+                <svg class="modal-photoshop-icon">
+                  <use href="./images/icons2.svg#icon-close"></use>
+                </svg>
+              </button>
+              <div class="mobile-menu__frame__items">
+                <p class="header__link">Портфоліо :</p>
+              </div>
+              <div
+                class="mobile-menu__frame__items mobile-menu__frame__items--sub-menu"
+              >
+                <a class="header__link" href="./3dsmax.html">Зds max</a>
+              </div>
+              <div
+                class="mobile-menu__frame__items mobile-menu__frame__items--sub-menu"
+              >
+                <a class="header__link" href="./photoshop.html">photoshop</a>
+              </div>
+              <div class="mobile-menu__frame__items">
+                <a class="header__link" href="./home.html#services">Послуги</a>
+              </div>
+              <div class="mobile-menu__frame__items">
+                <a class="header__link" href="catalog.html">Каталог</a>
+              </div>
+              <div class="mobile-menu__frame__items">
+                <a class="header__link" href="./home.html#reviews">Відгуки</a>
+              </div>
+              <div class="mobile-menu__frame__items">
+                <a class="header__link" href="#contact">Контакти</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -75,6 +131,12 @@
     <main>
       <section class="photo-hero-section">
         <div class="container">
+          <button
+            class="hero-section-order-btn header__block__button button-order modal-btn-open"
+            type="button"
+          >
+            Замовити
+          </button>
           <h1 class="photo-hero-section__title">autodesk 3ds max</h1>
         </div>
       </section>
@@ -234,7 +296,7 @@
               />
             </a>
           </div>
-          <div>
+          <div class="footer-section__wrap__nav">
             <nav>
               <ul>
                 <li><a class="footer-link" href="#advantages">Про нас</a></li>
@@ -373,12 +435,7 @@
           </svg>
         </button>
         <div class="modal__logo">
-          <img
-            width="126"
-            height="154"
-            src="./images/logo-small.svg"
-            alt="Логотип компанії"
-          />
+          <img src="./images/logo-small.svg" alt="Логотип компанії" />
         </div>
         <h2 class="modal__title">
           Наші спеціалісти зв'яжуться з Вами у зручний для Вас час!
@@ -494,7 +551,7 @@
       </div>
     </div>
 
-    <div class="backdrop-max" id="backdrop-max">
+    <div class="backdrop-max open" id="backdrop-max">
       <button
         class="modal-photoshop-close-btn max"
         type="button"
@@ -515,6 +572,7 @@
       </div>
     </div>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/max-modal.js"></script>
     <script src="./js/button-to-top.js"></script>

@@ -62,7 +62,7 @@
                 inset 0 0 0 800px rgb(90, 90, 90);
         // box-shadow: 0 0 5px 1px var(--color-emissive),
         // inset 0 0 5px 1px var(--color-emissive);
-        overflow-y: auto;
+        overflow-y: hidden;
         transform: translateX(105%);
         transition: transform 1s;
 
@@ -75,23 +75,28 @@
         }
 
         &__flower {
+            z-index: 1;
             position: absolute;
             pointer-events: none;
-            right: 30px;
-            top: 30px;
+            right: 10px;
+            top: -145px;
 
             &__icon {
-                width: 80px;
-                height: 320px;
-                fill: var(--color-primary-brown);
+                width: 160px;
+                height: 640px;
+                fill: var(--color-secondary-brown);
             }
         }
 
         &__items p {
+            position: relative;
+            z-index: 2;
             margin: 0;
         }
 
         &__items {
+            position: relative;
+            z-index: 2;
             margin-bottom: 10px;
 
             &--sub-menu {

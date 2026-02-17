@@ -1,7 +1,22 @@
+@use '../utils/' as *;
+
 .catalog-hero-section {
-    padding: 170px 0 20px 0px;
-    background-color: rgba(1, 1, 1, 0.3);
+    padding: 170px 0 10px 0px;
+    // background-color: rgba(1, 1, 1, 0.3);
+    background-image: url(../images/mobile-menu-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid var(--color-secondary-brown);
     margin-bottom: 20px;
+
+    @media screen and (max-width: 900px) {
+        padding: 130px 0 10px 0;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+        padding: 100px 0 10px 0;
+    }
 
     &__wrap {
         display: flex;
@@ -9,21 +24,76 @@
         justify-content: center;
         margin-bottom: 40px;
 
+        @media screen and (max-width: $bp-tablet) {
+            margin-bottom: 10px;
+        }
 
         &__title {
             font-family: 'Cormorant';
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             color: var(--color-primary-light);
-            font-size: 30px;
+            font-size: 40px;
             text-align: center;
             text-transform: uppercase;
             color: var(--color-primary-brown);
         }
 
+
+        &__sorting__mobile {
+            display: none;
+
+            @media screen and (max-width: $bp-tablet) {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 10px;
+            }
+
+            & p {
+                text-transform: uppercase;
+                font-size: 20px;
+                color: var(--color-primary-brown);
+                margin: auto 0;
+                font-weight: 500;
+            }
+
+            &__btn {
+                background-color: transparent;
+                border: none;
+                width: 30px;
+                height: 46px;
+                padding: 0;
+                transition: transform 1s ease;
+
+                @media screen and (max-width: $bp-tablet) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                &__icon {
+                    width: 30px;
+                    height: 46px;
+                    fill: var(--color-primary-brown);
+                }
+            }
+
+            &__btn:active {
+                border: 1px solid va;
+            }
+
+        }
+
+        
+
         &__sorting-bar {
             display: flex;
             gap: 5px;
             align-items: flex-start;
+
+            @media screen and (max-width: $bp-tablet) {
+                display: none;
+            }
         }
 
         &__sorting-bar p {

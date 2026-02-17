@@ -7,19 +7,26 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <!-- Preload -->
+    <div class="preloader">
+      <div class="preloader__logo">
+        <img
+          class="preloader__logo__catalog"
+          src="./images/Catalog-preload.png"
+          alt="Каталог"
+        />
+      </div>
+    </div>
+    <!-- Preload -->
     <header>
       <div class="container__header">
         <div class="header__block">
           <div class="header__block__logo">
             <a href="./home.html">
-              <img
-                width="113"
-                height="136"
-                src="./images/logo-small.svg"
-                alt="Логотип компанії"
-              />
+              <img src="./images/logo-small.svg" alt="Логотип компанії" />
             </a>
           </div>
+          <div class="header__block__text">Ardeon</div>
           <div class="header__nav">
             <div class="header__nav__diamond">
               <div class="header__nav__diamond__light"></div>
@@ -51,31 +58,99 @@
             </nav>
           </div>
           <div>
-            <button class="button-order modal-btn-open" type="button">
+            <button
+              class="header__block__button button-order modal-btn-open"
+              type="button"
+            >
               Замовити
             </button>
+            <button
+              class="header__block__burger-button menu-btn-open"
+              type="button"
+            >
+              <svg
+                class="header__block__burger-button-icon"
+                width="32"
+                height="32"
+              >
+                <use href="./images/icons2.svg#icon-Menu"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="mobile-menu">
+            <div>
+              <img
+                class="mobile-menu__flower"
+                src="./images/mobile-menu-flower-left.png"
+                alt="Flower"
+              />
+            </div>
+            <div class="mobile-menu__frame">
+              <div class="mobile-menu__frame__flower">
+                <svg class="mobile-menu__frame__flower__icon">
+                  <use href="./images/icons2.svg#icon-flowr-menu"></use>
+                </svg>
+              </div>
+              <button class="menu-btn-close" type="button">
+                <svg class="modal-photoshop-icon">
+                  <use href="./images/icons2.svg#icon-close"></use>
+                </svg>
+              </button>
+              <div class="mobile-menu__frame__items">
+                <p class="header__link">Портфоліо :</p>
+              </div>
+              <div
+                class="mobile-menu__frame__items mobile-menu__frame__items--sub-menu"
+              >
+                <a class="header__link" href="./3dsmax.html">Зds max</a>
+              </div>
+              <div
+                class="mobile-menu__frame__items mobile-menu__frame__items--sub-menu"
+              >
+                <a class="header__link" href="./photoshop.html">photoshop</a>
+              </div>
+              <div class="mobile-menu__frame__items">
+                <a class="header__link" href="./home.html#services">Послуги</a>
+              </div>
+              <div class="mobile-menu__frame__items">
+                <a class="header__link" href="catalog.html">Каталог</a>
+              </div>
+              <div class="mobile-menu__frame__items">
+                <a class="header__link" href="./home.html#reviews">Відгуки</a>
+              </div>
+              <div class="mobile-menu__frame__items">
+                <a class="header__link" href="#contact">Контакти</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <!-- Preload -->
-      <div class="preloader">
-        <div class="preloader__logo">
-          <img
-            width="500"
-            height="477"
-            src="./images/Catalog-preload.png"
-            alt="Каталог"
-          />
-        </div>
-      </div>
-      <!-- Preload -->
       <section class="catalog-hero-section">
         <div class="container">
+          <button
+            class="hero-section-order-btn header__block__button button-order modal-btn-open"
+            type="button"
+          >
+            Замовити
+          </button>
           <div class="catalog-hero-section__wrap">
             <div>
               <h1 class="catalog-hero-section__wrap__title">Каталог товарів</h1>
+            </div>
+            <div class="catalog-hero-section__wrap__sorting__mobile">
+              <button
+                class="catalog-hero-section__wrap__sorting__mobile__btn"
+                type="button"
+              >
+                <svg
+                  class="catalog-hero-section__wrap__sorting__mobile__btn__icon"
+                >
+                  <use href="./images/icons2.svg#icon-sorting"></use>
+                </svg>
+              </button>
+              <p>За замовчуванням</p>
             </div>
             <div class="catalog-hero-section__wrap__sorting-bar">
               <p>Cортувати:</p>
@@ -86,6 +161,18 @@
                 За замовчуванням
               </button>
               <button class="sorting-button" type="button">Новинки</button>
+            </div>
+          </div>
+          <div class="sorting-menu">
+            <div class="sorting-menu__frame">
+              <p>Сортувати</p>
+              <button class="sorting-mobile-btn" type="button">Рейтинг</button>
+              <button class="sorting-mobile-btn" type="button">Дешеві</button>
+              <button class="sorting-mobile-btn" type="button">Дорогі</button>
+              <button class="sorting-mobile-btn" type="button">
+                За замовчуванням
+              </button>
+              <button class="sorting-mobile-btn" type="button">Новинки</button>
             </div>
           </div>
         </div>
@@ -823,7 +910,7 @@
               />
             </a>
           </div>
-          <div>
+          <div class="footer-section__wrap__nav">
             <nav>
               <ul>
                 <li><a class="footer-link" href="#advantages">Про нас</a></li>
@@ -962,12 +1049,7 @@
           </svg>
         </button>
         <div class="modal__logo">
-          <img
-            width="126"
-            height="154"
-            src="./images/logo-small.svg"
-            alt="Логотип компанії"
-          />
+          <img src="./images/logo-small.svg" alt="Логотип компанії" />
         </div>
         <h2 class="modal__title">
           Наші спеціалісти зв'яжуться з Вами у зручний для Вас час!
@@ -1083,6 +1165,8 @@
       </div>
     </div>
 
+    <script src="./js/sorting-mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/sorting.js"></script>
     <script src="./js/button-to-top.js"></script>
     <script src="./js/diamond.js"></script>

@@ -1,3 +1,5 @@
+@use '../utils/' as *;
+
 .photo-section {
     margin-bottom: 30px;
 
@@ -7,21 +9,37 @@
         align-items: flex-start;
         gap: 15px;
 
-        &__coloumn {
+        @media screen and (max-width: $bp-tablet) {
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+            
+
+        &__column {
             display: flex;
             flex-direction: column;
             flex: 1;
+
+            @media screen and (max-width: $bp-tablet) {
+                flex-wrap: wrap;
+                flex: 0 0 calc(48%);
+            }
 
             &__item {
                 position: relative;
                 overflow: hidden;
                 border-radius: 3px;
                 margin-bottom: 15px;
+
+                @media screen and (max-width: $bp-tablet) {
+                    margin-bottom: 5px;
+                }
+
             }
 
 
             &__item img {
-                display: flex;
+                display: block;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;

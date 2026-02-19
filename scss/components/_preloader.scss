@@ -55,9 +55,24 @@
             height: 165px;
 
             @media screen and (max-width: $bp-tablet) {
-                    width: 350px;
-                    height: 116px;
-                }
+                width: 350px;
+                height: 116px;
+            }
+            
+            @media screen and (max-width: $bp-mobile) {
+                width: 300px;
+                height: 100px;
+            }
+        }
+
+        &__photoshop {
+            width: 500px;
+            height: 165px;
+
+            @media screen and (max-width: $bp-tablet) {
+                width: 350px;
+                height: 116px;
+            }
             
             @media screen and (max-width: $bp-mobile) {
                 width: 300px;

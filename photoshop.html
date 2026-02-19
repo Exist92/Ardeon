@@ -12,14 +12,10 @@
         <div class="header__block">
           <div class="header__block__logo">
             <a href="./home.html">
-              <img
-                width="113"
-                height="136"
-                src="./images/logo-small.svg"
-                alt="Логотип компанії"
-              />
+              <img src="./images/logo-small.svg" alt="Логотип компанії" />
             </a>
           </div>
+          <div class="header__block__text">Ardeon</div>
           <div class="header__nav">
             <div class="header__nav__diamond">
               <div class="header__nav__diamond__light"></div>
@@ -53,9 +49,70 @@
             </nav>
           </div>
           <div>
-            <button class="button-order modal-btn-open" type="button">
+            <button
+              class="header__block__button button-order modal-btn-open"
+              type="button"
+            >
               Замовити
             </button>
+            <button
+              class="header__block__burger-button menu-btn-open"
+              type="button"
+            >
+              <svg
+                class="header__block__burger-button-icon"
+                width="32"
+                height="32"
+              >
+                <use href="./images/icons2.svg#icon-Menu"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="mobile-menu">
+            <div>
+              <img
+                class="mobile-menu__flower"
+                src="./images/mobile-menu-flower-left.png"
+                alt="Flower"
+              />
+            </div>
+            <div class="mobile-menu__frame">
+              <div class="mobile-menu__frame__flower">
+                <svg class="mobile-menu__frame__flower__icon">
+                  <use href="./images/icons2.svg#icon-flowr-menu"></use>
+                </svg>
+              </div>
+              <button class="menu-btn-close" type="button">
+                <svg class="modal-photoshop-icon">
+                  <use href="./images/icons2.svg#icon-close"></use>
+                </svg>
+              </button>
+              <div class="mobile-menu__frame__items">
+                <p class="header__link">Портфоліо :</p>
+              </div>
+              <div
+                class="mobile-menu__frame__items mobile-menu__frame__items--sub-menu"
+              >
+                <a class="header__link" href="./3dsmax.html">Зds max</a>
+              </div>
+              <div
+                class="mobile-menu__frame__items mobile-menu__frame__items--sub-menu"
+              >
+                <a class="header__link" href="./photoshop.html">photoshop</a>
+              </div>
+              <div class="mobile-menu__frame__items">
+                <a class="header__link" href="./home.html#services">Послуги</a>
+              </div>
+              <div class="mobile-menu__frame__items">
+                <a class="header__link" href="catalog.html">Каталог</a>
+              </div>
+              <div class="mobile-menu__frame__items">
+                <a class="header__link" href="./home.html#reviews">Відгуки</a>
+              </div>
+              <div class="mobile-menu__frame__items">
+                <a class="header__link" href="#contact">Контакти</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -65,8 +122,7 @@
       <div class="preloader">
         <div class="preloader__logo">
           <img
-            width="500"
-            height="165"
+            class="preloader__logo__photoshop"
             src="./images/Photshop-preload.png"
             alt="Фотошоп"
           />
@@ -81,49 +137,59 @@
       <section class="photo-section">
         <div class="container">
           <div class="photo-section__wrap">
-            <div class="photo-section__wrap__coloumn">
+            <div class="photo-section__wrap__column">
               <div
-                class="photo-section__wrap__coloumn__item thumb"
+                class="photo-section__wrap__column__item thumb"
                 data-after="./images/photoshop/Castle-after.jpg"
                 data-before="./images/photoshop/Castle-before.jpg"
               >
                 <img src="./images/photoshop/Castle-preview.jpg" alt="Замок" />
               </div>
               <div
-                class="photo-section__wrap__coloumn__item thumb"
+                class="photo-section__wrap__column__item thumb"
                 data-after="./images/photoshop/planet-after.jpg"
                 data-before="./images/photoshop/planet-before.jpg"
               >
                 <img src="./images/photoshop/plane-preview.jpg" alt="Планета" />
               </div>
               <div
-                class="photo-section__wrap__coloumn__item thumb"
+                class="photo-section__wrap__column__item thumb"
                 data-after="./images/photoshop/queen-after.jpg"
                 data-before="./images/photoshop/queen-before.jpg"
               >
                 <img src="./images/photoshop/queen-preview.jpg" alt="queen" />
               </div>
-            </div>
-            <div class="photo-section__wrap__coloumn">
               <div
-                class="photo-section__wrap__coloumn__item thumb hide"
-                data-after="./images/photoshop/FantasyyArt.jpg"
-                data-before="./images/photoshop/FantasyyArt.jpg"
+                class="photo-section__wrap__column__item thumb"
+                data-after="./images/photoshop/Cait-Nuka.jpg"
+                data-before="./images/photoshop/Cait-Nuka-before.jpg"
               >
                 <img
-                  src="./images/photoshop/FantasyyArt-preview.jpg"
-                  alt="Fantast Art"
+                  src="./images/photoshop/Cait-Nuka-preview.jpg"
+                  alt="Fallout"
+                />
+              </div>
+            </div>
+            <div class="photo-section__wrap__column">
+              <div
+                class="photo-section__wrap__column__item thumb"
+                data-after="./images/photoshop/Rusalka-after.jpg"
+                data-before="./images/photoshop/Rusalka-before.jpg"
+              >
+                <img
+                  src="./images/photoshop/Rusalka-preview.jpg"
+                  alt="Rusalka"
                 />
               </div>
               <div
-                class="photo-section__wrap__coloumn__item thumb"
+                class="photo-section__wrap__column__item thumb"
                 data-after="./images/photoshop/Warden-after.jpg"
                 data-before="./images/photoshop/Warden-before.jpg"
               >
                 <img src="./images/photoshop/Warden-preview.jpg" alt="Warden" />
               </div>
               <div
-                class="photo-section__wrap__coloumn__item thumb"
+                class="photo-section__wrap__column__item thumb"
                 data-after="./images/photoshop/classic-after.jpg"
                 data-before="./images/photoshop/classic-before.jpg"
               >
@@ -132,46 +198,73 @@
                   alt="Classic"
                 />
               </div>
-            </div>
-            <div class="photo-section__wrap__coloumn">
               <div
-                class="photo-section__wrap__coloumn__item thumb"
+                class="photo-section__wrap__column__item thumb"
+                data-after="./images/photoshop/Lidiya.jpg"
+                data-before="./images/photoshop/Lidiya-before.jpg"
+              >
+                <img src="./images/photoshop/Lidiya-preview.jpg" alt="Lidiya" />
+              </div>
+            </div>
+            <div class="photo-section__wrap__column">
+              <div
+                class="photo-section__wrap__column__item thumb"
                 data-after="./images/photoshop/G65-after.jpg"
                 data-before="./images/photoshop/G65-before.jpg"
               >
                 <img src="./images/photoshop/G65-preview.jpg" alt="G65" />
               </div>
               <div
-                class="photo-section__wrap__coloumn__item thumb hide"
+                class="photo-section__wrap__column__item thumb hide"
                 data-after="./images/photoshop/Couple.png"
                 data-before="./images/photoshop/Couple.png"
               >
                 <img src="./images/photoshop/Couple-preview.jpg" alt="Couple" />
               </div>
               <div
-                class="photo-section__wrap__coloumn__item thumb hide"
+                class="photo-section__wrap__column__item thumb hide"
                 data-after="./images/photoshop/Crown.jpg"
                 data-before="./images/photoshop/Crown.jpg"
               >
                 <img src="./images/photoshop/Crown-preview.jpg" alt="Crown" />
               </div>
-            </div>
-            <div class="photo-section__wrap__coloumn">
               <div
-                class="photo-section__wrap__coloumn__item thumb"
+                class="photo-section__wrap__column__item thumb hide"
+                data-after="./images/photoshop/Auridon.jpg"
+                data-before="./images/photoshop/Auridon.jpg"
+              >
+                <img
+                  src="./images/photoshop/Auridon-preview.jpg"
+                  alt="Auridon"
+                />
+              </div>
+            </div>
+            <div class="photo-section__wrap__column">
+              <div
+                class="photo-section__wrap__column__item thumb hide"
                 data-after="./images/photoshop/Iris-after.png"
-                data-before="./images/photoshop/Iris-before.jpg"
+                data-before="./images/photoshop/Iris-after.png"
               >
                 <img src="./images/photoshop/Iris-preview.jpg" alt="Iris" />
               </div>
               <div
-                class="photo-section__wrap__coloumn__item thumb"
+                class="photo-section__wrap__column__item thumb hide"
                 data-after="./images/photoshop/red-hat-after.jpg"
-                data-before="./images/photoshop/red-hat-before.jpg"
+                data-before="./images/photoshop/red-hat-after.jpg"
               >
                 <img
                   src="./images/photoshop/red-hat-preview.jpg"
                   alt="Red hat"
+                />
+              </div>
+              <div
+                class="photo-section__wrap__column__item thumb"
+                data-after="./images/photoshop/imperial.jpg"
+                data-before="./images/photoshop/imperial-before.jpg"
+              >
+                <img
+                  src="./images/photoshop/imperial-preview.jpg"
+                  alt="Imperial"
                 />
               </div>
             </div>
@@ -194,7 +287,7 @@
               />
             </a>
           </div>
-          <div>
+          <div class="footer-section__wrap__nav">
             <nav>
               <ul>
                 <li><a class="footer-link" href="#advantages">Про нас</a></li>
@@ -487,6 +580,7 @@
       </div>
     </div>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal-photoshop.js"></script>
     <script src="./js/button-to-top.js"></script>
     <script src="./js/diamond.js"></script>
